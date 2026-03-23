@@ -1,0 +1,25 @@
+﻿@model OopS22Mvc76266.Web.Models.ErrorViewModel
+
+@{
+    ViewData["Title"] = "Error";
+}
+
+<h1 class="text-danger">Something went wrong</h1>
+
+<p>@Model.FriendlyMessage</p>
+
+@if (Model.ShowRequestId)
+{
+    <p>
+        <strong>Request ID:</strong> <code>@Model.RequestId</code>
+    </p>
+}
+
+<p>
+    Please go back to the previous page or return to the dashboard.
+</p>
+
+<p>
+    <a asp-controller="Home" asp-action="Index">Go to Home</a> |
+    <a asp-controller="Dashboard" asp-action="Index">Go to Dashboard</a>
+</p>

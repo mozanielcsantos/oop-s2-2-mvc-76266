@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "oop-s2-2-mvc-76266", "oop-s2-2-mvc-76266\oop-s2-2-mvc-76266.csproj", "{7712CF95-59A7-4BE1-A461-C4F4C9C63495}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoodSafety.Domain", "FoodSafety.Domain\FoodSafety.Domain.csproj", "{A7FDB7E0-BE62-4C06-A71B-444ABAED4EE1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoodSafety.Tests", "FoodSafety.Tests\FoodSafety.Tests.csproj", "{5F3CCC5A-6D6A-43AD-82FF-376694542BA8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7712CF95-59A7-4BE1-A461-C4F4C9C63495}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7712CF95-59A7-4BE1-A461-C4F4C9C63495}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7712CF95-59A7-4BE1-A461-C4F4C9C63495}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7712CF95-59A7-4BE1-A461-C4F4C9C63495}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7FDB7E0-BE62-4C06-A71B-444ABAED4EE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7FDB7E0-BE62-4C06-A71B-444ABAED4EE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7FDB7E0-BE62-4C06-A71B-444ABAED4EE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7FDB7E0-BE62-4C06-A71B-444ABAED4EE1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F3CCC5A-6D6A-43AD-82FF-376694542BA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F3CCC5A-6D6A-43AD-82FF-376694542BA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F3CCC5A-6D6A-43AD-82FF-376694542BA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F3CCC5A-6D6A-43AD-82FF-376694542BA8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
