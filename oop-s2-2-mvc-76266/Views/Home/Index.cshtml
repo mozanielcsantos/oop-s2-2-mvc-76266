@@ -3,6 +3,47 @@
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <h1 class="display-4">Food Safety Tracker</h1>
+    <p class="lead">
+        This web application was developed to manage food safety inspections, premises records, and follow-up actions.
+    </p>
+</div>
+
+<div class="row mt-4">
+    <div class="col-md-4">
+        <div class="card mb-4 shadow-sm">
+            <div class="card-body">
+                <h3 class="card-title">Premises</h3>
+                <p class="card-text">
+                    Store and manage food premises information, including business name, address, town, and risk rating.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="card mb-4 shadow-sm">
+            <div class="card-body">
+                <h3 class="card-title">Inspections</h3>
+                <p class="card-text">
+                    Record inspection results, scores, outcomes, notes, and inspection dates for each premises.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="card mb-4 shadow-sm">
+            <div class="card-body">
+                <h3 class="card-title">Follow-Ups</h3>
+                <p class="card-text">
+                    Track overdue actions, due dates, open items, and completed follow-up tasks after inspections.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="text-center mt-4">
+    <a class="btn btn-primary btn-lg" asp-controller="Dashboard" asp-action="Index">Go to Dashboard</a>
 </div>

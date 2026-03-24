@@ -1,0 +1,38 @@
+@model IEnumerable<FoodSafety.Domain.Entities.Inspection>
+
+@{
+    ViewData["Title"] = "Inspections";
+}
+
+<h1 class="mb-4">Inspections</h1>
+
+@if (!Model.Any())
+{
+    <p>No inspections found.</p>
+}
+else
+{
+    <table class="table table-striped table-bordered">
+        <thead>
+        <tr>
+            <th>Premises</th>
+            <th>Inspection Date</th>
+            <th>Score</th>
+            <th>Outcome</th>
+            <th>Notes</th>
+        </tr>
+        </thead>
+        <tbody>
+        @foreach (var inspection in Model)
+        {
+            <tr>
+                <td>@inspection.Premises?.Name</td>
+                <td>@inspection.InspectionDate.ToString("yyyy-MM-dd")</td>
+                <td>@inspection.Score</td>
+                <td>@inspection.Outcome</td>
+                <td>@inspection.Notes</td>
+            </tr>
+        }
+        </tbody>
+    </table>
+}

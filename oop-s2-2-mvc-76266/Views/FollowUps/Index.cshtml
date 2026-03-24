@@ -1,0 +1,38 @@
+@model IEnumerable<FoodSafety.Domain.Entities.FollowUp>
+
+@{
+    ViewData["Title"] = "Follow-Ups";
+}
+
+<h1 class="mb-4">Follow-Ups</h1>
+
+@if (!Model.Any())
+{
+    <p>No follow-ups found.</p>
+}
+else
+{
+    <table class="table table-striped table-bordered">
+        <thead>
+        <tr>
+            <th>Premises</th>
+            <th>Inspection Date</th>
+            <th>Due Date</th>
+            <th>Status</th>
+            <th>Closed Date</th>
+        </tr>
+        </thead>
+        <tbody>
+        @foreach (var followUp in Model)
+        {
+            <tr>
+                <td>@followUp.Inspection?.Premises?.Name</td>
+                <td>@followUp.Inspection?.InspectionDate.ToString("yyyy-MM-dd")</td>
+                <td>@followUp.DueDate.ToString("yyyy-MM-dd")</td>
+                <td>@followUp.Status</td>
+                <td>@(followUp.ClosedDate.HasValue ? followUp.ClosedDate.Value.ToString("yyyy-MM-dd") : "Open")</td>
+            </tr>
+        }
+        </tbody>
+    </table>
+}

@@ -1,0 +1,36 @@
+@model IEnumerable<FoodSafety.Domain.Entities.Premises>
+
+@{
+    ViewData["Title"] = "Premises";
+}
+
+<h1 class="mb-4">Premises</h1>
+
+@if (!Model.Any())
+{
+    <p>No premises found.</p>
+}
+else
+{
+    <table class="table table-striped table-bordered">
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Town</th>
+            <th>Risk Rating</th>
+        </tr>
+        </thead>
+        <tbody>
+        @foreach (var premises in Model)
+        {
+            <tr>
+                <td>@premises.Name</td>
+                <td>@premises.Address</td>
+                <td>@premises.Town</td>
+                <td>@premises.RiskRating</td>
+            </tr>
+        }
+        </tbody>
+    </table>
+}
