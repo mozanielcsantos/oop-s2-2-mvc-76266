@@ -4,22 +4,26 @@
     ViewData["Title"] = "Error";
 }
 
-<h1 class="text-danger">Something went wrong</h1>
+<div class="card panel-card p-5">
+    <h1 class="page-title text-danger mb-3">Something went wrong</h1>
 
-<p>@Model.FriendlyMessage</p>
-
-@if (Model.ShowRequestId)
-{
-    <p>
-        <strong>Request ID:</strong> <code>@Model.RequestId</code>
+    <p class="page-subtitle mb-3">
+        @Model.FriendlyMessage
     </p>
-}
 
-<p>
-    Please go back to the previous page or return to the dashboard.
-</p>
+    @if (Model.ShowRequestId)
+    {
+        <p>
+            <strong>Request ID:</strong> <code>@Model.RequestId</code>
+        </p>
+    }
 
-<p>
-    <a asp-controller="Home" asp-action="Index">Go to Home</a> |
-    <a asp-controller="Dashboard" asp-action="Index">Go to Dashboard</a>
-</p>
+    <p class="mb-4">
+        Please go back to the previous page or return to the dashboard.
+    </p>
+
+    <div class="d-flex gap-2 flex-wrap">
+        <a asp-controller="Home" asp-action="Index" class="btn btn-primary-soft">Go to Home</a>
+        <a asp-controller="Dashboard" asp-action="Index" class="btn btn-outline-secondary">Go to Dashboard</a>
+    </div>
+</div>

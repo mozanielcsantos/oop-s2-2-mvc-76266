@@ -1,49 +1,62 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Home";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Food Safety Tracker</h1>
-    <p class="lead">
-        This web application was developed to manage food safety inspections, premises records, and follow-up actions.
-    </p>
-</div>
+<div class="hero-card p-5 mb-4">
+    <div class="text-center">
+        <h1 class="display-3 fw-bold mb-3">Food Safety Tracker</h1>
+        <p class="fs-4 page-subtitle mb-4">
+            This web application was developed to manage food safety inspections, premises records, and follow-up actions.
+        </p>
 
-<div class="row mt-4">
-    <div class="col-md-4">
-        <div class="card mb-4 shadow-sm">
-            <div class="card-body">
-                <h3 class="card-title">Premises</h3>
-                <p class="card-text">
-                    Store and manage food premises information, including business name, address, town, and risk rating.
-                </p>
+        @if (User.Identity != null && User.Identity.IsAuthenticated)
+        {
+            <a asp-controller="Dashboard" asp-action="Index" class="btn btn-primary-soft btn-lg quick-action">
+                Go to Dashboard
+            </a>
+        }
+        else
+        {
+            <div class="d-flex justify-content-center gap-3 flex-wrap">
+                <a asp-area="Identity" asp-page="/Account/Login" class="btn btn-primary-soft btn-lg quick-action">
+                    Login
+                </a>
+                <a asp-area="Identity" asp-page="/Account/Register" class="btn btn-outline-secondary btn-lg quick-action">
+                    Register
+                </a>
             </div>
-        </div>
-    </div>
-
-    <div class="col-md-4">
-        <div class="card mb-4 shadow-sm">
-            <div class="card-body">
-                <h3 class="card-title">Inspections</h3>
-                <p class="card-text">
-                    Record inspection results, scores, outcomes, notes, and inspection dates for each premises.
-                </p>
-            </div>
-        </div>
-    </div>
-
-    <div class="col-md-4">
-        <div class="card mb-4 shadow-sm">
-            <div class="card-body">
-                <h3 class="card-title">Follow-Ups</h3>
-                <p class="card-text">
-                    Track overdue actions, due dates, open items, and completed follow-up tasks after inspections.
-                </p>
-            </div>
-        </div>
+        }
     </div>
 </div>
 
-<div class="text-center mt-4">
-    <a class="btn btn-primary btn-lg" asp-controller="Dashboard" asp-action="Index">Go to Dashboard</a>
+<div class="row g-4">
+    <div class="col-md-4">
+        <div class="feature-card p-4">
+            <div class="badge-soft mb-3">Entity 1</div>
+            <h3 class="mb-3">Premises</h3>
+            <p class="mb-0">
+                Store and manage food premises information, including business name, address, town, and risk rating.
+            </p>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="feature-card p-4">
+            <div class="badge-soft mb-3">Entity 2</div>
+            <h3 class="mb-3">Inspections</h3>
+            <p class="mb-0">
+                Record inspection results, scores, outcomes, notes, and inspection dates for each premises.
+            </p>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="feature-card p-4">
+            <div class="badge-soft mb-3">Entity 3</div>
+            <h3 class="mb-3">Follow-Ups</h3>
+            <p class="mb-0">
+                Track overdue actions, due dates, open items, and completed follow-up tasks after inspections.
+            </p>
+        </div>
+    </div>
 </div>

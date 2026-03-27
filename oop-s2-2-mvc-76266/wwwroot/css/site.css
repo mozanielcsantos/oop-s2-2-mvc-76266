@@ -2,21 +2,159 @@ html {
   font-size: 14px;
 }
 
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
-}
-
-.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
-}
-
-html {
-  position: relative;
-  min-height: 100%;
-}
-
 body {
-  margin-bottom: 60px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #1f2937;
+  margin-bottom: 0;
+}
+
+.bg-app {
+  background: #f3f6fa;
+}
+
+.app-navbar {
+  background: linear-gradient(90deg, #1f3b57 0%, #27496b 100%);
+}
+
+.page-title {
+  font-size: 1.9rem;
+  font-weight: 700;
+  color: #1f3b57;
+  margin-bottom: 1.25rem;
+}
+
+.page-subtitle {
+  color: #5b6675;
+  margin-bottom: 1.5rem;
+}
+
+.panel-card {
+  border: none;
+  border-radius: 18px;
+  box-shadow: 0 10px 24px rgba(31, 59, 87, 0.08);
+  background: #ffffff;
+}
+
+.card-kpi {
+  border: none;
+  border-radius: 18px;
+  box-shadow: 0 10px 24px rgba(31, 59, 87, 0.08);
+  background: #ffffff;
+  min-height: 150px;
+}
+
+.card-kpi .kpi-label {
+  font-size: 0.92rem;
+  color: #6b7280;
+  margin-bottom: 0.65rem;
+}
+
+.card-kpi .kpi-value {
+  font-size: 2.15rem;
+  font-weight: 700;
+  color: #1f3b57;
+}
+
+.table thead th {
+  background-color: #eef4fa;
+  color: #1f3b57;
+  font-weight: 700;
+  border-bottom: 0;
+  white-space: nowrap;
+}
+
+.table td,
+.table th {
+  vertical-align: middle;
+}
+
+.form-label {
+  font-weight: 600;
+  color: #334e68;
+}
+
+.form-control,
+.form-select {
+  border-radius: 12px;
+  min-height: 44px;
+}
+
+.btn-primary-soft {
+  background-color: #1f3b57;
+  border-color: #1f3b57;
+  color: #fff;
+  border-radius: 12px;
+  min-height: 44px;
+  padding: 0.6rem 1rem;
+  font-weight: 600;
+}
+
+.btn-primary-soft:hover {
+  background-color: #173047;
+  border-color: #173047;
+  color: #fff;
+}
+
+.btn-outline-secondary {
+  border-radius: 12px;
+  min-height: 44px;
+  padding: 0.6rem 1rem;
+  font-weight: 600;
+}
+
+.status-open {
+  color: #b45309;
+  font-weight: 700;
+}
+
+.status-closed {
+  color: #047857;
+  font-weight: 700;
+}
+
+.status-fail {
+  color: #b91c1c;
+  font-weight: 700;
+}
+
+.status-pass {
+  color: #15803d;
+  font-weight: 700;
+}
+
+.hero-card {
+  border: none;
+  border-radius: 22px;
+  box-shadow: 0 12px 28px rgba(31, 59, 87, 0.1);
+  background: #ffffff;
+}
+
+.feature-card {
+  border: none;
+  border-radius: 18px;
+  box-shadow: 0 10px 24px rgba(31, 59, 87, 0.08);
+  background: #ffffff;
+  height: 100%;
+}
+
+.feature-card h3 {
+  color: #1f3b57;
+  font-weight: 700;
+}
+
+.quick-action {
+  min-width: 180px;
+}
+
+.empty-state {
+  color: #6b7280;
+  padding: 1rem 0;
+}
+
+.badge-soft {
+  background-color: #e8eef5;
+  color: #1f3b57;
+  font-weight: 600;
+  border-radius: 999px;
+  padding: 0.45rem 0.8rem;
 }

@@ -1,0 +1,31 @@
+@model FoodSafety.Domain.Entities.FollowUp
+
+@{
+    ViewData["Title"] = "Create Follow-Up";
+}
+
+<h1 class="page-title">Create Follow-Up</h1>
+<p class="page-subtitle">Add a follow-up action for an inspection. The due date must be on or after the inspection date.</p>
+
+<div class="card panel-card p-4">
+    <form asp-action="Create" method="post">
+        <div asp-validation-summary="All" class="text-danger mb-3"></div>
+
+        <div class="mb-3">
+            <label asp-for="InspectionId" class="form-label">Inspection</label>
+            <select asp-for="InspectionId" asp-items="ViewBag.InspectionId" class="form-select">
+                <option value="">Select inspection</option>
+            </select>
+            <span asp-validation-for="InspectionId" class="text-danger"></span>
+        </div>
+
+        <div class="mb-4">
+            <label asp-for="DueDate" class="form-label"></label>
+            <input asp-for="DueDate" type="date" class="form-control" />
+            <span asp-validation-for="DueDate" class="text-danger"></span>
+        </div>
+
+        <button type="submit" class="btn btn-primary-soft">Save Follow-Up</button>
+        <a asp-action="Index" class="btn btn-outline-secondary ms-2">Back</a>
+    </form>
+</div>

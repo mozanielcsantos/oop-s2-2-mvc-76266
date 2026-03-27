@@ -1,0 +1,1486 @@
+2026-03-27 09:42:43.781 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5160/Dashboard - null null
+2026-03-27 09:42:43.987 +00:00 [ERR] Failed executing DbCommand (27ms) [Parameters=[@__p_0='?' (Size = 36)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."Id" = @__p_0
+LIMIT 1
+2026-03-27 09:42:44.018 +00:00 [ERR] An exception occurred while iterating over the results of a query for context type 'OopS22Mvc76266.Web.Data.ApplicationDbContext'.
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: AspNetUsers'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: AspNetUsers'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2026-03-27 09:42:44.024 +00:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: AspNetUsers'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Identity.SignInManager`1.ValidateSecurityStampAsync(ClaimsPrincipal principal)
+   at Microsoft.AspNetCore.Identity.SecurityStampValidator`1.ValidateAsync(CookieValidatePrincipalContext context)
+   at Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler.HandleAuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.AuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.AuthenticateAsync(HttpContext context, String scheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Program.<>c.<<<Main>$>b__0_2>d.MoveNext() in /Users/mozanielclementinodossantos/Documents/oop-s2-2-mvc-76266/oop-s2-2-mvc-76266/Program.cs:line 59
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2026-03-27 09:42:44.539 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5160/Dashboard - null null
+2026-03-27 09:42:47.718 +00:00 [INF] Request starting HTTP/1.1 POST http://localhost:5160/Identity/Account/Logout?returnUrl=%2F - application/x-www-form-urlencoded 225
+2026-03-27 09:42:49.565 +00:00 [ERR] Failed executing DbCommand (1ms) [Parameters=[@__p_0='?' (Size = 36)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."Id" = @__p_0
+LIMIT 1
+2026-03-27 09:42:49.565 +00:00 [ERR] Failed executing DbCommand (1ms) [Parameters=[@__p_0='?' (Size = 36)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."Id" = @__p_0
+LIMIT 1
+2026-03-27 09:42:49.567 +00:00 [ERR] An exception occurred while iterating over the results of a query for context type 'OopS22Mvc76266.Web.Data.ApplicationDbContext'.
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: AspNetUsers'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: AspNetUsers'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2026-03-27 09:42:49.567 +00:00 [ERR] An exception occurred while iterating over the results of a query for context type 'OopS22Mvc76266.Web.Data.ApplicationDbContext'.
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: AspNetUsers'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: AspNetUsers'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2026-03-27 09:42:49.569 +00:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: AspNetUsers'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Identity.SignInManager`1.ValidateSecurityStampAsync(ClaimsPrincipal principal)
+   at Microsoft.AspNetCore.Identity.SecurityStampValidator`1.ValidateAsync(CookieValidatePrincipalContext context)
+   at Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler.HandleAuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.AuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.AuthenticateAsync(HttpContext context, String scheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Program.<>c.<<<Main>$>b__0_2>d.MoveNext() in /Users/mozanielclementinodossantos/Documents/oop-s2-2-mvc-76266/oop-s2-2-mvc-76266/Program.cs:line 59
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2026-03-27 09:42:49.569 +00:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: AspNetUsers'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Identity.SignInManager`1.ValidateSecurityStampAsync(ClaimsPrincipal principal)
+   at Microsoft.AspNetCore.Identity.SecurityStampValidator`1.ValidateAsync(CookieValidatePrincipalContext context)
+   at Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler.HandleAuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.AuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.AuthenticateAsync(HttpContext context, String scheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Program.<>c.<<<Main>$>b__0_2>d.MoveNext() in /Users/mozanielclementinodossantos/Documents/oop-s2-2-mvc-76266/oop-s2-2-mvc-76266/Program.cs:line 59
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2026-03-27 09:42:49.569 +00:00 [ERR] An exception was thrown attempting to execute the error handler.
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: AspNetUsers'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Identity.SignInManager`1.ValidateSecurityStampAsync(ClaimsPrincipal principal)
+   at Microsoft.AspNetCore.Identity.SecurityStampValidator`1.ValidateAsync(CookieValidatePrincipalContext context)
+   at Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler.HandleAuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.AuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.AuthenticateAsync(HttpContext context, String scheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Program.<>c.<<<Main>$>b__0_2>d.MoveNext() in /Users/mozanielclementinodossantos/Documents/oop-s2-2-mvc-76266/oop-s2-2-mvc-76266/Program.cs:line 59
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.HandleException(HttpContext context, ExceptionDispatchInfo edi)
+2026-03-27 09:42:49.573 +00:00 [ERR] An exception was thrown attempting to execute the error handler.
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: AspNetUsers'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Identity.SignInManager`1.ValidateSecurityStampAsync(ClaimsPrincipal principal)
+   at Microsoft.AspNetCore.Identity.SecurityStampValidator`1.ValidateAsync(CookieValidatePrincipalContext context)
+   at Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler.HandleAuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.AuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.AuthenticateAsync(HttpContext context, String scheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Program.<>c.<<<Main>$>b__0_2>d.MoveNext() in /Users/mozanielclementinodossantos/Documents/oop-s2-2-mvc-76266/oop-s2-2-mvc-76266/Program.cs:line 59
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.HandleException(HttpContext context, ExceptionDispatchInfo edi)
+2026-03-27 09:42:49.575 +00:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: AspNetUsers'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Identity.SignInManager`1.ValidateSecurityStampAsync(ClaimsPrincipal principal)
+   at Microsoft.AspNetCore.Identity.SecurityStampValidator`1.ValidateAsync(CookieValidatePrincipalContext context)
+   at Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler.HandleAuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.AuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.AuthenticateAsync(HttpContext context, String scheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Program.<>c.<<<Main>$>b__0_2>d.MoveNext() in /Users/mozanielclementinodossantos/Documents/oop-s2-2-mvc-76266/oop-s2-2-mvc-76266/Program.cs:line 59
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.HandleException(HttpContext context, ExceptionDispatchInfo edi)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-03-27 09:42:49.573 +00:00 [ERR] An exception was thrown attempting to execute the error handler.
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: AspNetUsers'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Identity.SignInManager`1.ValidateSecurityStampAsync(ClaimsPrincipal principal)
+   at Microsoft.AspNetCore.Identity.SecurityStampValidator`1.ValidateAsync(CookieValidatePrincipalContext context)
+   at Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler.HandleAuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.AuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.AuthenticateAsync(HttpContext context, String scheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Program.<>c.<<<Main>$>b__0_2>d.MoveNext() in /Users/mozanielclementinodossantos/Documents/oop-s2-2-mvc-76266/oop-s2-2-mvc-76266/Program.cs:line 59
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.HandleException(HttpContext context, ExceptionDispatchInfo edi)
+2026-03-27 09:42:49.575 +00:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: AspNetUsers'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Identity.SignInManager`1.ValidateSecurityStampAsync(ClaimsPrincipal principal)
+   at Microsoft.AspNetCore.Identity.SecurityStampValidator`1.ValidateAsync(CookieValidatePrincipalContext context)
+   at Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler.HandleAuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.AuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.AuthenticateAsync(HttpContext context, String scheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Program.<>c.<<<Main>$>b__0_2>d.MoveNext() in /Users/mozanielclementinodossantos/Documents/oop-s2-2-mvc-76266/oop-s2-2-mvc-76266/Program.cs:line 59
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.HandleException(HttpContext context, ExceptionDispatchInfo edi)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-03-27 09:42:49.580 +00:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: AspNetUsers'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Identity.SignInManager`1.ValidateSecurityStampAsync(ClaimsPrincipal principal)
+   at Microsoft.AspNetCore.Identity.SecurityStampValidator`1.ValidateAsync(CookieValidatePrincipalContext context)
+   at Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler.HandleAuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.AuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.AuthenticateAsync(HttpContext context, String scheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Program.<>c.<<<Main>$>b__0_2>d.MoveNext() in /Users/mozanielclementinodossantos/Documents/oop-s2-2-mvc-76266/oop-s2-2-mvc-76266/Program.cs:line 59
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.HandleException(HttpContext context, ExceptionDispatchInfo edi)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-03-27 09:42:52.027 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5160/Dashboard - 500 null text/html; charset=utf-8 8231.0282ms
+2026-03-27 09:42:52.027 +00:00 [INF] Request finished HTTP/1.1 POST http://localhost:5160/Identity/Account/Logout?returnUrl=%2F - 500 null text/html; charset=utf-8 4302.4977ms
+2026-03-27 09:42:52.027 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5160/Dashboard - 500 null text/html; charset=utf-8 7473.4332ms
+2026-03-27 09:42:55.562 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5160/Dashboard - null null
+2026-03-27 09:42:55.583 +00:00 [ERR] Failed executing DbCommand (1ms) [Parameters=[@__p_0='?' (Size = 36)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."Id" = @__p_0
+LIMIT 1
+2026-03-27 09:42:55.586 +00:00 [ERR] An exception occurred while iterating over the results of a query for context type 'OopS22Mvc76266.Web.Data.ApplicationDbContext'.
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: AspNetUsers'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: AspNetUsers'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2026-03-27 09:42:55.593 +00:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: AspNetUsers'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Identity.SignInManager`1.ValidateSecurityStampAsync(ClaimsPrincipal principal)
+   at Microsoft.AspNetCore.Identity.SecurityStampValidator`1.ValidateAsync(CookieValidatePrincipalContext context)
+   at Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler.HandleAuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.AuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.AuthenticateAsync(HttpContext context, String scheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Program.<>c.<<<Main>$>b__0_2>d.MoveNext() in /Users/mozanielclementinodossantos/Documents/oop-s2-2-mvc-76266/oop-s2-2-mvc-76266/Program.cs:line 59
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2026-03-27 09:42:55.600 +00:00 [ERR] An exception was thrown attempting to execute the error handler.
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: AspNetUsers'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Identity.SignInManager`1.ValidateSecurityStampAsync(ClaimsPrincipal principal)
+   at Microsoft.AspNetCore.Identity.SecurityStampValidator`1.ValidateAsync(CookieValidatePrincipalContext context)
+   at Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler.HandleAuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.AuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.AuthenticateAsync(HttpContext context, String scheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Program.<>c.<<<Main>$>b__0_2>d.MoveNext() in /Users/mozanielclementinodossantos/Documents/oop-s2-2-mvc-76266/oop-s2-2-mvc-76266/Program.cs:line 59
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.HandleException(HttpContext context, ExceptionDispatchInfo edi)
+2026-03-27 09:42:55.604 +00:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: AspNetUsers'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Identity.SignInManager`1.ValidateSecurityStampAsync(ClaimsPrincipal principal)
+   at Microsoft.AspNetCore.Identity.SecurityStampValidator`1.ValidateAsync(CookieValidatePrincipalContext context)
+   at Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler.HandleAuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.AuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.AuthenticateAsync(HttpContext context, String scheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Program.<>c.<<<Main>$>b__0_2>d.MoveNext() in /Users/mozanielclementinodossantos/Documents/oop-s2-2-mvc-76266/oop-s2-2-mvc-76266/Program.cs:line 59
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.HandleException(HttpContext context, ExceptionDispatchInfo edi)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-03-27 09:42:55.618 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5160/Dashboard - 500 null text/html; charset=utf-8 57.1341ms
+2026-03-27 09:43:16.487 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5160/ - null null
+2026-03-27 09:43:16.526 +00:00 [ERR] Failed executing DbCommand (8ms) [Parameters=[@__p_0='?' (Size = 36)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."Id" = @__p_0
+LIMIT 1
+2026-03-27 09:43:16.542 +00:00 [ERR] An exception occurred while iterating over the results of a query for context type 'OopS22Mvc76266.Web.Data.ApplicationDbContext'.
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: AspNetUsers'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: AspNetUsers'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2026-03-27 09:43:16.547 +00:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: AspNetUsers'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Identity.SignInManager`1.ValidateSecurityStampAsync(ClaimsPrincipal principal)
+   at Microsoft.AspNetCore.Identity.SecurityStampValidator`1.ValidateAsync(CookieValidatePrincipalContext context)
+   at Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler.HandleAuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.AuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.AuthenticateAsync(HttpContext context, String scheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Program.<>c.<<<Main>$>b__0_2>d.MoveNext() in /Users/mozanielclementinodossantos/Documents/oop-s2-2-mvc-76266/oop-s2-2-mvc-76266/Program.cs:line 59
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2026-03-27 09:43:16.555 +00:00 [ERR] An exception was thrown attempting to execute the error handler.
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: AspNetUsers'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Identity.SignInManager`1.ValidateSecurityStampAsync(ClaimsPrincipal principal)
+   at Microsoft.AspNetCore.Identity.SecurityStampValidator`1.ValidateAsync(CookieValidatePrincipalContext context)
+   at Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler.HandleAuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.AuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.AuthenticateAsync(HttpContext context, String scheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Program.<>c.<<<Main>$>b__0_2>d.MoveNext() in /Users/mozanielclementinodossantos/Documents/oop-s2-2-mvc-76266/oop-s2-2-mvc-76266/Program.cs:line 59
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.HandleException(HttpContext context, ExceptionDispatchInfo edi)
+2026-03-27 09:43:16.557 +00:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: AspNetUsers'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Identity.SignInManager`1.ValidateSecurityStampAsync(ClaimsPrincipal principal)
+   at Microsoft.AspNetCore.Identity.SecurityStampValidator`1.ValidateAsync(CookieValidatePrincipalContext context)
+   at Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler.HandleAuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.AuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.AuthenticateAsync(HttpContext context, String scheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Program.<>c.<<<Main>$>b__0_2>d.MoveNext() in /Users/mozanielclementinodossantos/Documents/oop-s2-2-mvc-76266/oop-s2-2-mvc-76266/Program.cs:line 59
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.HandleException(HttpContext context, ExceptionDispatchInfo edi)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-03-27 09:43:16.576 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5160/ - 500 null text/html; charset=utf-8 90.0394ms
+2026-03-27 09:43:16.579 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5160/css/site.css?v=26wEgA9QVbaTneCoJbe1hxE5enGv1G0QOxscOoLlrO0 - null null
+2026-03-27 09:43:16.581 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5160/favicon.ico - null null
+2026-03-27 09:43:16.582 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5160/lib/bootstrap/dist/js/bootstrap.bundle.min.js - null null
+2026-03-27 09:43:16.583 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5160/lib/bootstrap/dist/css/bootstrap.min.css - null null
+2026-03-27 09:43:16.584 +00:00 [INF] The file /css/site.css was not modified
+2026-03-27 09:43:16.584 +00:00 [INF] The file /lib/bootstrap/dist/js/bootstrap.bundle.min.js was not modified
+2026-03-27 09:43:16.584 +00:00 [INF] The file /lib/bootstrap/dist/css/bootstrap.min.css was not modified
+2026-03-27 09:43:16.584 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5160/lib/bootstrap/dist/js/bootstrap.bundle.min.js - 304 null text/javascript 2.076ms
+2026-03-27 09:43:16.584 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5160/css/site.css?v=26wEgA9QVbaTneCoJbe1hxE5enGv1G0QOxscOoLlrO0 - 304 null text/css 5.2982ms
+2026-03-27 09:43:16.584 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5160/lib/bootstrap/dist/css/bootstrap.min.css - 304 null text/css 1.0739ms
+2026-03-27 09:43:16.584 +00:00 [INF] The file /favicon.ico was not modified
+2026-03-27 09:43:16.585 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5160/favicon.ico - 304 null image/x-icon 4.5034ms
+2026-03-27 09:43:17.392 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5160/ - null null
+2026-03-27 09:43:17.394 +00:00 [ERR] Failed executing DbCommand (0ms) [Parameters=[@__p_0='?' (Size = 36)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."Id" = @__p_0
+LIMIT 1
+2026-03-27 09:43:17.396 +00:00 [ERR] An exception occurred while iterating over the results of a query for context type 'OopS22Mvc76266.Web.Data.ApplicationDbContext'.
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: AspNetUsers'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: AspNetUsers'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2026-03-27 09:43:17.398 +00:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: AspNetUsers'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Identity.SignInManager`1.ValidateSecurityStampAsync(ClaimsPrincipal principal)
+   at Microsoft.AspNetCore.Identity.SecurityStampValidator`1.ValidateAsync(CookieValidatePrincipalContext context)
+   at Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler.HandleAuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.AuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.AuthenticateAsync(HttpContext context, String scheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Program.<>c.<<<Main>$>b__0_2>d.MoveNext() in /Users/mozanielclementinodossantos/Documents/oop-s2-2-mvc-76266/oop-s2-2-mvc-76266/Program.cs:line 59
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2026-03-27 09:43:17.403 +00:00 [ERR] An exception was thrown attempting to execute the error handler.
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: AspNetUsers'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Identity.SignInManager`1.ValidateSecurityStampAsync(ClaimsPrincipal principal)
+   at Microsoft.AspNetCore.Identity.SecurityStampValidator`1.ValidateAsync(CookieValidatePrincipalContext context)
+   at Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler.HandleAuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.AuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.AuthenticateAsync(HttpContext context, String scheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Program.<>c.<<<Main>$>b__0_2>d.MoveNext() in /Users/mozanielclementinodossantos/Documents/oop-s2-2-mvc-76266/oop-s2-2-mvc-76266/Program.cs:line 59
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.HandleException(HttpContext context, ExceptionDispatchInfo edi)
+2026-03-27 09:43:17.409 +00:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: AspNetUsers'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Identity.SignInManager`1.ValidateSecurityStampAsync(ClaimsPrincipal principal)
+   at Microsoft.AspNetCore.Identity.SecurityStampValidator`1.ValidateAsync(CookieValidatePrincipalContext context)
+   at Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler.HandleAuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.AuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.AuthenticateAsync(HttpContext context, String scheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Program.<>c.<<<Main>$>b__0_2>d.MoveNext() in /Users/mozanielclementinodossantos/Documents/oop-s2-2-mvc-76266/oop-s2-2-mvc-76266/Program.cs:line 59
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.HandleException(HttpContext context, ExceptionDispatchInfo edi)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-03-27 09:43:17.418 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5160/ - 500 null text/html; charset=utf-8 26.4999ms
+2026-03-27 09:43:19.713 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5160/ - null null
+2026-03-27 09:43:19.722 +00:00 [ERR] Failed executing DbCommand (1ms) [Parameters=[@__p_0='?' (Size = 36)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."Id" = @__p_0
+LIMIT 1
+2026-03-27 09:43:19.726 +00:00 [ERR] An exception occurred while iterating over the results of a query for context type 'OopS22Mvc76266.Web.Data.ApplicationDbContext'.
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: AspNetUsers'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: AspNetUsers'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2026-03-27 09:43:19.730 +00:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: AspNetUsers'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Identity.SignInManager`1.ValidateSecurityStampAsync(ClaimsPrincipal principal)
+   at Microsoft.AspNetCore.Identity.SecurityStampValidator`1.ValidateAsync(CookieValidatePrincipalContext context)
+   at Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler.HandleAuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.AuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.AuthenticateAsync(HttpContext context, String scheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Program.<>c.<<<Main>$>b__0_2>d.MoveNext() in /Users/mozanielclementinodossantos/Documents/oop-s2-2-mvc-76266/oop-s2-2-mvc-76266/Program.cs:line 59
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2026-03-27 09:43:19.735 +00:00 [ERR] An exception was thrown attempting to execute the error handler.
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: AspNetUsers'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Identity.SignInManager`1.ValidateSecurityStampAsync(ClaimsPrincipal principal)
+   at Microsoft.AspNetCore.Identity.SecurityStampValidator`1.ValidateAsync(CookieValidatePrincipalContext context)
+   at Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler.HandleAuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.AuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.AuthenticateAsync(HttpContext context, String scheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Program.<>c.<<<Main>$>b__0_2>d.MoveNext() in /Users/mozanielclementinodossantos/Documents/oop-s2-2-mvc-76266/oop-s2-2-mvc-76266/Program.cs:line 59
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.HandleException(HttpContext context, ExceptionDispatchInfo edi)
+2026-03-27 09:43:19.738 +00:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: AspNetUsers'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Identity.SignInManager`1.ValidateSecurityStampAsync(ClaimsPrincipal principal)
+   at Microsoft.AspNetCore.Identity.SecurityStampValidator`1.ValidateAsync(CookieValidatePrincipalContext context)
+   at Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler.HandleAuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.AuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.AuthenticateAsync(HttpContext context, String scheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Program.<>c.<<<Main>$>b__0_2>d.MoveNext() in /Users/mozanielclementinodossantos/Documents/oop-s2-2-mvc-76266/oop-s2-2-mvc-76266/Program.cs:line 59
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.HandleException(HttpContext context, ExceptionDispatchInfo edi)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-03-27 09:43:19.748 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5160/ - 500 null text/html; charset=utf-8 35.2835ms
+2026-03-27 09:53:46.690 +00:00 [INF] Application is shutting down...
+ '/Users/mozanielclementinodossantos/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2026-03-27 09:46:24.566 +00:00 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2026-03-27 09:46:24.574 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2026-03-27 09:46:24.581 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2026-03-27 09:46:24.595 +00:00 [INF] No migrations were applied. The database is already up to date.
+2026-03-27 09:46:24.600 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2026-03-27 09:46:24.601 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2026-03-27 09:46:24.601 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2026-03-27 09:46:24.602 +00:00 [INF] No migrations were applied. The database is already up to date.
+2026-03-27 09:46:24.788 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Premises" AS "p")
+2026-03-27 09:46:24.861 +00:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedName_0='?' (Size = 5)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."ConcurrencyStamp", "a"."Name", "a"."NormalizedName"
+FROM "AspNetRoles" AS "a"
+WHERE "a"."NormalizedName" = @__normalizedName_0
+LIMIT 1
+2026-03-27 09:46:24.896 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedName_0='?' (Size = 9)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."ConcurrencyStamp", "a"."Name", "a"."NormalizedName"
+FROM "AspNetRoles" AS "a"
+WHERE "a"."NormalizedName" = @__normalizedName_0
+LIMIT 1
+2026-03-27 09:46:24.897 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedName_0='?' (Size = 6)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."ConcurrencyStamp", "a"."Name", "a"."NormalizedName"
+FROM "AspNetRoles" AS "a"
+WHERE "a"."NormalizedName" = @__normalizedName_0
+LIMIT 1
+2026-03-27 09:46:24.906 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedEmail_0='?' (Size = 14)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2026-03-27 09:46:24.953 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedRoleName_0='?' (Size = 5)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."ConcurrencyStamp", "a"."Name", "a"."NormalizedName"
+FROM "AspNetRoles" AS "a"
+WHERE "a"."NormalizedName" = @__normalizedRoleName_0
+LIMIT 2
+2026-03-27 09:46:25.006 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (Size = 36), @__p_1='?' (Size = 36)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."UserId", "a"."RoleId"
+FROM "AspNetUserRoles" AS "a"
+WHERE "a"."UserId" = @__p_0 AND "a"."RoleId" = @__p_1
+LIMIT 1
+2026-03-27 09:46:25.216 +00:00 [INF] Now listening on: http://localhost:5156
+2026-03-27 09:46:25.217 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-27 09:46:25.218 +00:00 [INF] Hosting environment: Development
+2026-03-27 09:46:25.218 +00:00 [INF] Content root path: /Users/mozanielclementinodossantos/Documents/oop-s2-2-mvc-76266/oop-s2-2-mvc-76266
+2026-03-27 09:46:25.912 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5156/ - null null
+2026-03-27 09:46:25.916 +00:00 [WRN] Failed to determine the https port for redirect.
+2026-03-27 09:46:25.960 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (Size = 36)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."Id" = @__p_0
+LIMIT 1
+2026-03-27 09:46:25.984 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@__user_Id_0='?' (Size = 36)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."ClaimType", "a"."ClaimValue", "a"."UserId"
+FROM "AspNetUserClaims" AS "a"
+WHERE "a"."UserId" = @__user_Id_0
+2026-03-27 09:46:26.001 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@__userId_0='?' (Size = 36)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a0"."Name"
+FROM "AspNetUserRoles" AS "a"
+INNER JOIN "AspNetRoles" AS "a0" ON "a"."RoleId" = "a0"."Id"
+WHERE "a"."UserId" = @__userId_0
+2026-03-27 09:46:26.003 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedName_0='?' (Size = 5)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."ConcurrencyStamp", "a"."Name", "a"."NormalizedName"
+FROM "AspNetRoles" AS "a"
+WHERE "a"."NormalizedName" = @__normalizedName_0
+LIMIT 1
+2026-03-27 09:46:26.008 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@__role_Id_0='?' (Size = 36)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."ClaimType", "a"."ClaimValue"
+FROM "AspNetRoleClaims" AS "a"
+WHERE "a"."RoleId" = @__role_Id_0
+2026-03-27 09:46:26.012 +00:00 [INF] Executing endpoint 'OopS22Mvc76266.Web.Controllers.HomeController.Index (oop-s2-2-mvc-76266)'
+2026-03-27 09:46:26.017 +00:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller OopS22Mvc76266.Web.Controllers.HomeController (oop-s2-2-mvc-76266).
+2026-03-27 09:46:26.022 +00:00 [INF] Executing action method OopS22Mvc76266.Web.Controllers.HomeController.Index (oop-s2-2-mvc-76266) - Validation state: "Valid"
+2026-03-27 09:46:26.025 +00:00 [INF] Executed action method OopS22Mvc76266.Web.Controllers.HomeController.Index (oop-s2-2-mvc-76266), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.2671ms.
+2026-03-27 09:46:26.033 +00:00 [INF] Executing ViewResult, running view Index.
+2026-03-27 09:46:26.134 +00:00 [INF] Executed ViewResult - view Index executed in 103.396ms.
+2026-03-27 09:46:26.135 +00:00 [INF] Executed action OopS22Mvc76266.Web.Controllers.HomeController.Index (oop-s2-2-mvc-76266) in 118.1727ms
+2026-03-27 09:46:26.135 +00:00 [INF] Executed endpoint 'OopS22Mvc76266.Web.Controllers.HomeController.Index (oop-s2-2-mvc-76266)'
+2026-03-27 09:46:26.139 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5156/js/site.js?v=y_Ngd8W21UpuCUhEqGbUKDEqFnNfTjAfb24GhJJGUyM - null null
+2026-03-27 09:46:26.139 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5156/css/site.css?v=r22M7xOahcMheWCkoVof2Nt7pQmj7mMSFKTei-SfmQ0 - null null
+2026-03-27 09:46:26.139 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5156/lib/bootstrap/dist/js/bootstrap.bundle.min.js - null null
+2026-03-27 09:46:26.140 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5156/ - 200 null text/html; charset=utf-8 228.7262ms
+2026-03-27 09:46:26.141 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5156/lib/bootstrap/dist/css/bootstrap.min.css - null null
+2026-03-27 09:46:26.147 +00:00 [INF] The file /js/site.js was not modified
+2026-03-27 09:46:26.147 +00:00 [INF] The file /lib/bootstrap/dist/css/bootstrap.min.css was not modified
+2026-03-27 09:46:26.147 +00:00 [INF] The file /lib/bootstrap/dist/js/bootstrap.bundle.min.js was not modified
+2026-03-27 09:46:26.148 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5156/js/site.js?v=y_Ngd8W21UpuCUhEqGbUKDEqFnNfTjAfb24GhJJGUyM - 304 null text/javascript 9.6678ms
+2026-03-27 09:46:26.148 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5156/lib/bootstrap/dist/css/bootstrap.min.css - 304 null text/css 7.4996ms
+2026-03-27 09:46:26.148 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5156/lib/bootstrap/dist/js/bootstrap.bundle.min.js - 304 null text/javascript 8.9541ms
+2026-03-27 09:46:26.154 +00:00 [INF] Sending file. Request path: '/css/site.css'. Physical path: '/Users/mozanielclementinodossantos/Documents/oop-s2-2-mvc-76266/oop-s2-2-mvc-76266/wwwroot/css/site.css'
+2026-03-27 09:46:26.155 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5156/css/site.css?v=r22M7xOahcMheWCkoVof2Nt7pQmj7mMSFKTei-SfmQ0 - 200 1179 text/css 16.1706ms
+2026-03-27 09:46:26.213 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5156/css/site.css?v=26wEgA9QVbaTneCoJbe1hxE5enGv1G0QOxscOoLlrO0 - null null
+2026-03-27 09:46:26.226 +00:00 [INF] Sending file. Request path: '/css/site.css'. Physical path: '/Users/mozanielclementinodossantos/Documents/oop-s2-2-mvc-76266/oop-s2-2-mvc-76266/wwwroot/css/site.css'
+2026-03-27 09:46:26.231 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5156/css/site.css?v=26wEgA9QVbaTneCoJbe1hxE5enGv1G0QOxscOoLlrO0 - 200 1179 text/css 17.538ms
+2026-03-27 09:46:32.715 +00:00 [INF] Request starting HTTP/1.1 POST http://localhost:5156/Identity/Account/Logout?returnUrl=%2F - application/x-www-form-urlencoded 225
+2026-03-27 09:46:32.746 +00:00 [INF] Executing endpoint '/Account/Logout'
+2026-03-27 09:46:32.783 +00:00 [INF] Route matched with {page = "/Account/Logout", area = "Identity", action = "", controller = ""}. Executing page /Account/Logout
+2026-03-27 09:46:32.805 +00:00 [INF] Executing handler method Microsoft.AspNetCore.Identity.UI.V5.Pages.Account.Internal.LogoutModel.OnPost - ModelState is "Valid"
+2026-03-27 09:46:32.810 +00:00 [INF] AuthenticationScheme: Identity.Application signed out.
+2026-03-27 09:46:32.812 +00:00 [INF] AuthenticationScheme: Identity.External signed out.
+2026-03-27 09:46:32.812 +00:00 [INF] AuthenticationScheme: Identity.TwoFactorUserId signed out.
+2026-03-27 09:46:32.813 +00:00 [INF] User logged out.
+2026-03-27 09:46:32.813 +00:00 [INF] Executed handler method OnPost, returned result Microsoft.AspNetCore.Mvc.LocalRedirectResult.
+2026-03-27 09:46:32.815 +00:00 [INF] Executing LocalRedirectResult, redirecting to /.
+2026-03-27 09:46:32.815 +00:00 [INF] Executed page /Account/Logout in 31.8495ms
+2026-03-27 09:46:32.815 +00:00 [INF] Executed endpoint '/Account/Logout'
+2026-03-27 09:46:32.816 +00:00 [INF] Request finished HTTP/1.1 POST http://localhost:5156/Identity/Account/Logout?returnUrl=%2F - 302 0 null 101.0537ms
+2026-03-27 09:46:32.821 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5156/ - null null
+2026-03-27 09:46:32.823 +00:00 [INF] Executing endpoint 'OopS22Mvc76266.Web.Controllers.HomeController.Index (oop-s2-2-mvc-76266)'
+2026-03-27 09:46:32.823 +00:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller OopS22Mvc76266.Web.Controllers.HomeController (oop-s2-2-mvc-76266).
+2026-03-27 09:46:32.823 +00:00 [INF] Executing action method OopS22Mvc76266.Web.Controllers.HomeController.Index (oop-s2-2-mvc-76266) - Validation state: "Valid"
+2026-03-27 09:46:32.824 +00:00 [INF] Executed action method OopS22Mvc76266.Web.Controllers.HomeController.Index (oop-s2-2-mvc-76266), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0295ms.
+2026-03-27 09:46:32.824 +00:00 [INF] Executing ViewResult, running view Index.
+2026-03-27 09:46:32.833 +00:00 [INF] Executed ViewResult - view Index executed in 9.6137ms.
+2026-03-27 09:46:32.834 +00:00 [INF] Executed action OopS22Mvc76266.Web.Controllers.HomeController.Index (oop-s2-2-mvc-76266) in 10.4423ms
+2026-03-27 09:46:32.834 +00:00 [INF] Executed endpoint 'OopS22Mvc76266.Web.Controllers.HomeController.Index (oop-s2-2-mvc-76266)'
+2026-03-27 09:46:32.834 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5156/ - 200 null text/html; charset=utf-8 12.789ms
+2026-03-27 09:46:35.696 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5156/Dashboard - null null
+2026-03-27 09:46:35.706 +00:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin|Inspector|Viewer)
+2026-03-27 09:46:35.710 +00:00 [INF] AuthenticationScheme: Identity.Application was challenged.
+2026-03-27 09:46:35.710 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5156/Dashboard - 302 0 null 14.0894ms
+2026-03-27 09:46:35.721 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5156/Identity/Account/Login?ReturnUrl=%2FDashboard - null null
+2026-03-27 09:46:35.731 +00:00 [INF] Executing endpoint '/Account/Login'
+2026-03-27 09:46:35.757 +00:00 [INF] Route matched with {page = "/Account/Login", area = "Identity", action = "", controller = ""}. Executing page /Account/Login
+2026-03-27 09:46:35.761 +00:00 [INF] Executing handler method Microsoft.AspNetCore.Identity.UI.V5.Pages.Account.Internal.LoginModel.OnGetAsync - ModelState is "Valid"
+2026-03-27 09:46:35.763 +00:00 [INF] AuthenticationScheme: Identity.External signed out.
+2026-03-27 09:46:35.764 +00:00 [INF] Executed handler method OnGetAsync, returned result .
+2026-03-27 09:46:35.767 +00:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2026-03-27 09:46:35.767 +00:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2026-03-27 09:46:35.796 +00:00 [INF] Executed page /Account/Login in 37.7984ms
+2026-03-27 09:46:35.796 +00:00 [INF] Executed endpoint '/Account/Login'
+2026-03-27 09:46:35.796 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5156/Identity/Account/Login?ReturnUrl=%2FDashboard - 200 null text/html; charset=utf-8 74.6431ms
+2026-03-27 09:46:50.841 +00:00 [INF] Request starting HTTP/1.1 POST http://localhost:5156/Identity/Account/Login?ReturnUrl=%2FDashboard - application/x-www-form-urlencoded 261
+2026-03-27 09:46:50.845 +00:00 [INF] Executing endpoint '/Account/Login'
+2026-03-27 09:46:50.847 +00:00 [INF] Route matched with {page = "/Account/Login", area = "Identity", action = "", controller = ""}. Executing page /Account/Login
+2026-03-27 09:46:50.860 +00:00 [INF] Executing handler method Microsoft.AspNetCore.Identity.UI.V5.Pages.Account.Internal.LoginModel.OnPostAsync - ModelState is "Valid"
+2026-03-27 09:46:50.909 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedUserName_0='?' (Size = 14)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2026-03-27 09:46:50.957 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@__user_Id_0='?' (Size = 36)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."ClaimType", "a"."ClaimValue", "a"."UserId"
+FROM "AspNetUserClaims" AS "a"
+WHERE "a"."UserId" = @__user_Id_0
+2026-03-27 09:46:50.958 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@__userId_0='?' (Size = 36)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a0"."Name"
+FROM "AspNetUserRoles" AS "a"
+INNER JOIN "AspNetRoles" AS "a0" ON "a"."RoleId" = "a0"."Id"
+WHERE "a"."UserId" = @__userId_0
+2026-03-27 09:46:50.958 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedName_0='?' (Size = 5)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."ConcurrencyStamp", "a"."Name", "a"."NormalizedName"
+FROM "AspNetRoles" AS "a"
+WHERE "a"."NormalizedName" = @__normalizedName_0
+LIMIT 1
+2026-03-27 09:46:50.959 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@__role_Id_0='?' (Size = 36)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."ClaimType", "a"."ClaimValue"
+FROM "AspNetRoleClaims" AS "a"
+WHERE "a"."RoleId" = @__role_Id_0
+2026-03-27 09:46:50.960 +00:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2026-03-27 09:46:50.961 +00:00 [INF] User logged in.
+2026-03-27 09:46:50.961 +00:00 [INF] Executed handler method OnPostAsync, returned result Microsoft.AspNetCore.Mvc.LocalRedirectResult.
+2026-03-27 09:46:50.961 +00:00 [INF] Executing LocalRedirectResult, redirecting to /Dashboard.
+2026-03-27 09:46:50.961 +00:00 [INF] Executed page /Account/Login in 114.0335ms
+2026-03-27 09:46:50.961 +00:00 [INF] Executed endpoint '/Account/Login'
+2026-03-27 09:46:50.961 +00:00 [INF] Request finished HTTP/1.1 POST http://localhost:5156/Identity/Account/Login?ReturnUrl=%2FDashboard - 302 0 null 120.6022ms
+2026-03-27 09:46:50.966 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5156/Dashboard - null null
+2026-03-27 09:46:50.969 +00:00 [INF] Executing endpoint 'OopS22Mvc76266.Web.Controllers.DashboardController.Index (oop-s2-2-mvc-76266)'
+2026-03-27 09:46:50.971 +00:00 [INF] Route matched with {action = "Index", controller = "Dashboard", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, System.String) on controller OopS22Mvc76266.Web.Controllers.DashboardController (oop-s2-2-mvc-76266).
+2026-03-27 09:46:50.972 +00:00 [INF] Executing action method OopS22Mvc76266.Web.Controllers.DashboardController.Index (oop-s2-2-mvc-76266) - Validation state: "Valid"
+2026-03-27 09:46:50.982 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id"
+FROM "Premises" AS "p"
+2026-03-27 09:46:51.024 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[@__filteredPremisesIds_0='?' (Size = 28), @__monthStart_1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Inspections" AS "i"
+WHERE "i"."PremisesId" IN (
+    SELECT "f"."value"
+    FROM json_each(@__filteredPremisesIds_0) AS "f"
+) AND "i"."InspectionDate" >= @__monthStart_1
+2026-03-27 09:46:51.026 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@__filteredPremisesIds_0='?' (Size = 28), @__monthStart_1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Inspections" AS "i"
+WHERE "i"."PremisesId" IN (
+    SELECT "f"."value"
+    FROM json_each(@__filteredPremisesIds_0) AS "f"
+) AND "i"."InspectionDate" >= @__monthStart_1 AND "i"."Outcome" = 'Fail'
+2026-03-27 09:46:51.039 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@__filteredPremisesIds_0='?' (Size = 28), @__now_1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "FollowUps" AS "f"
+INNER JOIN "Inspections" AS "i" ON "f"."InspectionId" = "i"."Id"
+WHERE "i"."PremisesId" IN (
+    SELECT "f0"."value"
+    FROM json_each(@__filteredPremisesIds_0) AS "f0"
+) AND "f"."Status" = 'Open' AND "f"."DueDate" < @__now_1
+2026-03-27 09:46:51.046 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "t"."Town"
+FROM (
+    SELECT DISTINCT "p"."Town"
+    FROM "Premises" AS "p"
+) AS "t"
+ORDER BY "t"."Town"
+2026-03-27 09:46:51.048 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "t"."RiskRating"
+FROM (
+    SELECT DISTINCT "p"."RiskRating"
+    FROM "Premises" AS "p"
+) AS "t"
+ORDER BY "t"."RiskRating"
+2026-03-27 09:46:51.049 +00:00 [INF] Executed action method OopS22Mvc76266.Web.Controllers.DashboardController.Index (oop-s2-2-mvc-76266), returned result Microsoft.AspNetCore.Mvc.ViewResult in 76.7585ms.
+2026-03-27 09:46:51.050 +00:00 [INF] Executing ViewResult, running view Index.
+2026-03-27 09:46:51.058 +00:00 [INF] Executed ViewResult - view Index executed in 8.9172ms.
+2026-03-27 09:46:51.058 +00:00 [INF] Executed action OopS22Mvc76266.Web.Controllers.DashboardController.Index (oop-s2-2-mvc-76266) in 86.7629ms
+2026-03-27 09:46:51.058 +00:00 [INF] Executed endpoint 'OopS22Mvc76266.Web.Controllers.DashboardController.Index (oop-s2-2-mvc-76266)'
+2026-03-27 09:46:51.058 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5156/Dashboard - 200 null text/html; charset=utf-8 92.0223ms
+2026-03-27 09:46:56.558 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5156/Dashboard?town=Cork&riskRating= - null null
+2026-03-27 09:46:56.560 +00:00 [INF] Executing endpoint 'OopS22Mvc76266.Web.Controllers.DashboardController.Index (oop-s2-2-mvc-76266)'
+2026-03-27 09:46:56.560 +00:00 [INF] Route matched with {action = "Index", controller = "Dashboard", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, System.String) on controller OopS22Mvc76266.Web.Controllers.DashboardController (oop-s2-2-mvc-76266).
+2026-03-27 09:46:56.561 +00:00 [INF] Executing action method OopS22Mvc76266.Web.Controllers.DashboardController.Index (oop-s2-2-mvc-76266) - Validation state: "Valid"
+2026-03-27 09:46:56.569 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@__town_0='?' (Size = 4)], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id"
+FROM "Premises" AS "p"
+WHERE "p"."Town" = @__town_0
+2026-03-27 09:46:56.574 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[@__filteredPremisesIds_0='?' (Size = 10), @__monthStart_1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Inspections" AS "i"
+WHERE "i"."PremisesId" IN (
+    SELECT "f"."value"
+    FROM json_each(@__filteredPremisesIds_0) AS "f"
+) AND "i"."InspectionDate" >= @__monthStart_1
+2026-03-27 09:46:56.579 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@__filteredPremisesIds_0='?' (Size = 10), @__monthStart_1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Inspections" AS "i"
+WHERE "i"."PremisesId" IN (
+    SELECT "f"."value"
+    FROM json_each(@__filteredPremisesIds_0) AS "f"
+) AND "i"."InspectionDate" >= @__monthStart_1 AND "i"."Outcome" = 'Fail'
+2026-03-27 09:46:56.581 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@__filteredPremisesIds_0='?' (Size = 10), @__now_1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "FollowUps" AS "f"
+INNER JOIN "Inspections" AS "i" ON "f"."InspectionId" = "i"."Id"
+WHERE "i"."PremisesId" IN (
+    SELECT "f0"."value"
+    FROM json_each(@__filteredPremisesIds_0) AS "f0"
+) AND "f"."Status" = 'Open' AND "f"."DueDate" < @__now_1
+2026-03-27 09:46:56.581 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "t"."Town"
+FROM (
+    SELECT DISTINCT "p"."Town"
+    FROM "Premises" AS "p"
+) AS "t"
+ORDER BY "t"."Town"
+2026-03-27 09:46:56.582 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "t"."RiskRating"
+FROM (
+    SELECT DISTINCT "p"."RiskRating"
+    FROM "Premises" AS "p"
+) AS "t"
+ORDER BY "t"."RiskRating"
+2026-03-27 09:46:56.582 +00:00 [INF] Executed action method OopS22Mvc76266.Web.Controllers.DashboardController.Index (oop-s2-2-mvc-76266), returned result Microsoft.AspNetCore.Mvc.ViewResult in 20.1352ms.
+2026-03-27 09:46:56.582 +00:00 [INF] Executing ViewResult, running view Index.
+2026-03-27 09:46:56.585 +00:00 [INF] Executed ViewResult - view Index executed in 2.6295ms.
+2026-03-27 09:46:56.585 +00:00 [INF] Executed action OopS22Mvc76266.Web.Controllers.DashboardController.Index (oop-s2-2-mvc-76266) in 24.6163ms
+2026-03-27 09:46:56.585 +00:00 [INF] Executed endpoint 'OopS22Mvc76266.Web.Controllers.DashboardController.Index (oop-s2-2-mvc-76266)'
+2026-03-27 09:46:56.586 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5156/Dashboard?town=Cork&riskRating= - 200 null text/html; charset=utf-8 27.693ms
+2026-03-27 09:47:00.516 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5156/Dashboard?town=Galway&riskRating= - null null
+2026-03-27 09:47:00.517 +00:00 [INF] Executing endpoint 'OopS22Mvc76266.Web.Controllers.DashboardController.Index (oop-s2-2-mvc-76266)'
+2026-03-27 09:47:00.518 +00:00 [INF] Route matched with {action = "Index", controller = "Dashboard", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, System.String) on controller OopS22Mvc76266.Web.Controllers.DashboardController (oop-s2-2-mvc-76266).
+2026-03-27 09:47:00.518 +00:00 [INF] Executing action method OopS22Mvc76266.Web.Controllers.DashboardController.Index (oop-s2-2-mvc-76266) - Validation state: "Valid"
+2026-03-27 09:47:00.520 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@__town_0='?' (Size = 6)], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id"
+FROM "Premises" AS "p"
+WHERE "p"."Town" = @__town_0
+2026-03-27 09:47:00.522 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@__filteredPremisesIds_0='?' (Size = 15), @__monthStart_1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Inspections" AS "i"
+WHERE "i"."PremisesId" IN (
+    SELECT "f"."value"
+    FROM json_each(@__filteredPremisesIds_0) AS "f"
+) AND "i"."InspectionDate" >= @__monthStart_1
+2026-03-27 09:47:00.524 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@__filteredPremisesIds_0='?' (Size = 15), @__monthStart_1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Inspections" AS "i"
+WHERE "i"."PremisesId" IN (
+    SELECT "f"."value"
+    FROM json_each(@__filteredPremisesIds_0) AS "f"
+) AND "i"."InspectionDate" >= @__monthStart_1 AND "i"."Outcome" = 'Fail'
+2026-03-27 09:47:00.526 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@__filteredPremisesIds_0='?' (Size = 15), @__now_1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "FollowUps" AS "f"
+INNER JOIN "Inspections" AS "i" ON "f"."InspectionId" = "i"."Id"
+WHERE "i"."PremisesId" IN (
+    SELECT "f0"."value"
+    FROM json_each(@__filteredPremisesIds_0) AS "f0"
+) AND "f"."Status" = 'Open' AND "f"."DueDate" < @__now_1
+2026-03-27 09:47:00.528 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "t"."Town"
+FROM (
+    SELECT DISTINCT "p"."Town"
+    FROM "Premises" AS "p"
+) AS "t"
+ORDER BY "t"."Town"
+2026-03-27 09:47:00.529 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "t"."RiskRating"
+FROM (
+    SELECT DISTINCT "p"."RiskRating"
+    FROM "Premises" AS "p"
+) AS "t"
+ORDER BY "t"."RiskRating"
+2026-03-27 09:47:00.531 +00:00 [INF] Executed action method OopS22Mvc76266.Web.Controllers.DashboardController.Index (oop-s2-2-mvc-76266), returned result Microsoft.AspNetCore.Mvc.ViewResult in 12.1161ms.
+2026-03-27 09:47:00.532 +00:00 [INF] Executing ViewResult, running view Index.
+2026-03-27 09:47:00.536 +00:00 [INF] Executed ViewResult - view Index executed in 4.6384ms.
+2026-03-27 09:47:00.536 +00:00 [INF] Executed action OopS22Mvc76266.Web.Controllers.DashboardController.Index (oop-s2-2-mvc-76266) in 18.3031ms
+2026-03-27 09:47:00.537 +00:00 [INF] Executed endpoint 'OopS22Mvc76266.Web.Controllers.DashboardController.Index (oop-s2-2-mvc-76266)'
+2026-03-27 09:47:00.537 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5156/Dashboard?town=Galway&riskRating= - 200 null text/html; charset=utf-8 21.5001ms
+2026-03-27 09:55:15.563 +00:00 [INF] Application is shutting down...
+ '/Users/mozanielclementinodossantos/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2026-03-27 09:54:19.366 +00:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2026-03-27 09:54:19.371 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2026-03-27 09:54:19.376 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2026-03-27 09:54:19.385 +00:00 [INF] No migrations were applied. The database is already up to date.
+2026-03-27 09:54:19.388 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2026-03-27 09:54:19.388 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2026-03-27 09:54:19.388 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2026-03-27 09:54:19.388 +00:00 [INF] No migrations were applied. The database is already up to date.
+2026-03-27 09:54:19.465 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Premises" AS "p")
+2026-03-27 09:54:19.503 +00:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedName_0='?' (Size = 5)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."ConcurrencyStamp", "a"."Name", "a"."NormalizedName"
+FROM "AspNetRoles" AS "a"
+WHERE "a"."NormalizedName" = @__normalizedName_0
+LIMIT 1
+2026-03-27 09:54:19.523 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedName_0='?' (Size = 9)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."ConcurrencyStamp", "a"."Name", "a"."NormalizedName"
+FROM "AspNetRoles" AS "a"
+WHERE "a"."NormalizedName" = @__normalizedName_0
+LIMIT 1
+2026-03-27 09:54:19.524 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedName_0='?' (Size = 6)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."ConcurrencyStamp", "a"."Name", "a"."NormalizedName"
+FROM "AspNetRoles" AS "a"
+WHERE "a"."NormalizedName" = @__normalizedName_0
+LIMIT 1
+2026-03-27 09:54:19.527 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedEmail_0='?' (Size = 14)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2026-03-27 09:54:19.544 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedRoleName_0='?' (Size = 5)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."ConcurrencyStamp", "a"."Name", "a"."NormalizedName"
+FROM "AspNetRoles" AS "a"
+WHERE "a"."NormalizedName" = @__normalizedRoleName_0
+LIMIT 2
+2026-03-27 09:54:19.554 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (Size = 36), @__p_1='?' (Size = 36)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."UserId", "a"."RoleId"
+FROM "AspNetUserRoles" AS "a"
+WHERE "a"."UserId" = @__p_0 AND "a"."RoleId" = @__p_1
+LIMIT 1
+2026-03-27 09:54:19.631 +00:00 [INF] Now listening on: http://localhost:5160
+2026-03-27 09:54:19.632 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-27 09:54:19.632 +00:00 [INF] Hosting environment: Development
+2026-03-27 09:54:19.632 +00:00 [INF] Content root path: /Users/mozanielclementinodossantos/Documents/oop-s2-2-mvc-76266/oop-s2-2-mvc-76266
+2026-03-27 09:57:51.243 +00:00 [INF] Application is shutting down...
+ '/Users/mozanielclementinodossantos/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2026-03-27 09:55:23.390 +00:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2026-03-27 09:55:23.397 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2026-03-27 09:55:23.403 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2026-03-27 09:55:23.414 +00:00 [INF] No migrations were applied. The database is already up to date.
+2026-03-27 09:55:23.417 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2026-03-27 09:55:23.417 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2026-03-27 09:55:23.418 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2026-03-27 09:55:23.418 +00:00 [INF] No migrations were applied. The database is already up to date.
+2026-03-27 09:55:23.513 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Premises" AS "p")
+2026-03-27 09:55:23.558 +00:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedName_0='?' (Size = 5)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."ConcurrencyStamp", "a"."Name", "a"."NormalizedName"
+FROM "AspNetRoles" AS "a"
+WHERE "a"."NormalizedName" = @__normalizedName_0
+LIMIT 1
+2026-03-27 09:55:23.586 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedName_0='?' (Size = 9)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."ConcurrencyStamp", "a"."Name", "a"."NormalizedName"
+FROM "AspNetRoles" AS "a"
+WHERE "a"."NormalizedName" = @__normalizedName_0
+LIMIT 1
+2026-03-27 09:55:23.587 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedName_0='?' (Size = 6)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."ConcurrencyStamp", "a"."Name", "a"."NormalizedName"
+FROM "AspNetRoles" AS "a"
+WHERE "a"."NormalizedName" = @__normalizedName_0
+LIMIT 1
+2026-03-27 09:55:23.592 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedEmail_0='?' (Size = 14)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2026-03-27 09:55:23.612 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedRoleName_0='?' (Size = 5)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."ConcurrencyStamp", "a"."Name", "a"."NormalizedName"
+FROM "AspNetRoles" AS "a"
+WHERE "a"."NormalizedName" = @__normalizedRoleName_0
+LIMIT 2
+2026-03-27 09:55:23.623 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (Size = 36), @__p_1='?' (Size = 36)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."UserId", "a"."RoleId"
+FROM "AspNetUserRoles" AS "a"
+WHERE "a"."UserId" = @__p_0 AND "a"."RoleId" = @__p_1
+LIMIT 1
+2026-03-27 09:55:23.728 +00:00 [INF] Now listening on: http://localhost:5156
+2026-03-27 09:55:23.729 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-27 09:55:23.729 +00:00 [INF] Hosting environment: Development
+2026-03-27 09:55:23.729 +00:00 [INF] Content root path: /Users/mozanielclementinodossantos/Documents/oop-s2-2-mvc-76266/oop-s2-2-mvc-76266
+2026-03-27 09:55:25.066 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5156/ - null null
+2026-03-27 09:55:25.075 +00:00 [WRN] Failed to determine the https port for redirect.
+2026-03-27 09:55:25.131 +00:00 [INF] Executing endpoint 'OopS22Mvc76266.Web.Controllers.HomeController.Index (oop-s2-2-mvc-76266)'
+2026-03-27 09:55:25.145 +00:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller OopS22Mvc76266.Web.Controllers.HomeController (oop-s2-2-mvc-76266).
+2026-03-27 09:55:25.149 +00:00 [INF] Executing action method OopS22Mvc76266.Web.Controllers.HomeController.Index (oop-s2-2-mvc-76266) - Validation state: "Valid"
+2026-03-27 09:55:25.151 +00:00 [INF] Executed action method OopS22Mvc76266.Web.Controllers.HomeController.Index (oop-s2-2-mvc-76266), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.2312ms.
+2026-03-27 09:55:25.157 +00:00 [INF] Executing ViewResult, running view Index.
+2026-03-27 09:55:25.253 +00:00 [INF] Executed ViewResult - view Index executed in 97.1772ms.
+2026-03-27 09:55:25.253 +00:00 [INF] Executed action OopS22Mvc76266.Web.Controllers.HomeController.Index (oop-s2-2-mvc-76266) in 107.4929ms
+2026-03-27 09:55:25.253 +00:00 [INF] Executed endpoint 'OopS22Mvc76266.Web.Controllers.HomeController.Index (oop-s2-2-mvc-76266)'
+2026-03-27 09:55:25.255 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5156/ - 200 null text/html; charset=utf-8 192.0321ms
+2026-03-27 09:55:25.323 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5156/css/site.css?v=ICAgPqaCDQtMHNMTwr9WpF3QnIVp-vC_HnVioHHNJY0 - null null
+2026-03-27 09:55:25.333 +00:00 [INF] Sending file. Request path: '/css/site.css'. Physical path: '/Users/mozanielclementinodossantos/Documents/oop-s2-2-mvc-76266/oop-s2-2-mvc-76266/wwwroot/css/site.css'
+2026-03-27 09:55:25.333 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5156/css/site.css?v=ICAgPqaCDQtMHNMTwr9WpF3QnIVp-vC_HnVioHHNJY0 - 200 2371 text/css 10.1735ms
+2026-03-27 09:55:44.298 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5156/Dashboard - null null
+2026-03-27 09:55:44.434 +00:00 [INF] Executing endpoint 'OopS22Mvc76266.Web.Controllers.DashboardController.Index (oop-s2-2-mvc-76266)'
+2026-03-27 09:55:44.493 +00:00 [INF] Route matched with {action = "Index", controller = "Dashboard", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, System.String) on controller OopS22Mvc76266.Web.Controllers.DashboardController (oop-s2-2-mvc-76266).
+2026-03-27 09:55:44.511 +00:00 [INF] Executing action method OopS22Mvc76266.Web.Controllers.DashboardController.Index (oop-s2-2-mvc-76266) - Validation state: "Valid"
+2026-03-27 09:55:44.584 +00:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id"
+FROM "Premises" AS "p"
+2026-03-27 09:55:44.657 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[@__filteredPremisesIds_0='?' (Size = 28), @__monthStart_1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Inspections" AS "i"
+WHERE "i"."PremisesId" IN (
+    SELECT "f"."value"
+    FROM json_each(@__filteredPremisesIds_0) AS "f"
+) AND "i"."InspectionDate" >= @__monthStart_1
+2026-03-27 09:55:44.661 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@__filteredPremisesIds_0='?' (Size = 28), @__monthStart_1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Inspections" AS "i"
+WHERE "i"."PremisesId" IN (
+    SELECT "f"."value"
+    FROM json_each(@__filteredPremisesIds_0) AS "f"
+) AND "i"."InspectionDate" >= @__monthStart_1 AND "i"."Outcome" = 'Fail'
+2026-03-27 09:55:44.694 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@__filteredPremisesIds_0='?' (Size = 28), @__now_1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "FollowUps" AS "f"
+INNER JOIN "Inspections" AS "i" ON "f"."InspectionId" = "i"."Id"
+WHERE "i"."PremisesId" IN (
+    SELECT "f0"."value"
+    FROM json_each(@__filteredPremisesIds_0) AS "f0"
+) AND "f"."Status" = 'Open' AND "f"."DueDate" < @__now_1
+2026-03-27 09:55:44.705 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "t"."Town"
+FROM (
+    SELECT DISTINCT "p"."Town"
+    FROM "Premises" AS "p"
+) AS "t"
+ORDER BY "t"."Town"
+2026-03-27 09:55:44.707 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "t"."RiskRating"
+FROM (
+    SELECT DISTINCT "p"."RiskRating"
+    FROM "Premises" AS "p"
+) AS "t"
+ORDER BY "t"."RiskRating"
+2026-03-27 09:55:44.708 +00:00 [INF] Executed action method OopS22Mvc76266.Web.Controllers.DashboardController.Index (oop-s2-2-mvc-76266), returned result Microsoft.AspNetCore.Mvc.ViewResult in 196.296ms.
+2026-03-27 09:55:44.710 +00:00 [INF] Executing ViewResult, running view Index.
+2026-03-27 09:55:45.903 +00:00 [INF] Executed ViewResult - view Index executed in 1194.9521ms.
+2026-03-27 09:55:45.904 +00:00 [INF] Executed action OopS22Mvc76266.Web.Controllers.DashboardController.Index (oop-s2-2-mvc-76266) in 1410.5421ms
+2026-03-27 09:55:45.904 +00:00 [INF] Executed endpoint 'OopS22Mvc76266.Web.Controllers.DashboardController.Index (oop-s2-2-mvc-76266)'
+2026-03-27 09:55:45.911 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5156/Dashboard - 200 null text/html; charset=utf-8 1620.8066ms
+2026-03-27 09:55:50.512 +00:00 [INF] Request starting HTTP/1.1 POST http://localhost:5156/Identity/Account/Logout?returnUrl=%2F - application/x-www-form-urlencoded 225
+2026-03-27 09:55:50.537 +00:00 [INF] Executing endpoint '/Account/Logout'
+2026-03-27 09:55:50.549 +00:00 [INF] Route matched with {page = "/Account/Logout", area = "Identity", action = "", controller = ""}. Executing page /Account/Logout
+2026-03-27 09:55:50.568 +00:00 [INF] Executing handler method Microsoft.AspNetCore.Identity.UI.V5.Pages.Account.Internal.LogoutModel.OnPost - ModelState is "Valid"
+2026-03-27 09:55:50.575 +00:00 [INF] AuthenticationScheme: Identity.Application signed out.
+2026-03-27 09:55:50.576 +00:00 [INF] AuthenticationScheme: Identity.External signed out.
+2026-03-27 09:55:50.576 +00:00 [INF] AuthenticationScheme: Identity.TwoFactorUserId signed out.
+2026-03-27 09:55:50.576 +00:00 [INF] User logged out.
+2026-03-27 09:55:50.576 +00:00 [INF] Executed handler method OnPost, returned result Microsoft.AspNetCore.Mvc.LocalRedirectResult.
+2026-03-27 09:55:50.578 +00:00 [INF] Executing LocalRedirectResult, redirecting to /.
+2026-03-27 09:55:50.578 +00:00 [INF] Executed page /Account/Logout in 28.5673ms
+2026-03-27 09:55:50.578 +00:00 [INF] Executed endpoint '/Account/Logout'
+2026-03-27 09:55:50.578 +00:00 [INF] Request finished HTTP/1.1 POST http://localhost:5156/Identity/Account/Logout?returnUrl=%2F - 302 0 null 66.1748ms
+2026-03-27 09:55:50.584 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5156/ - null null
+2026-03-27 09:55:50.585 +00:00 [INF] Executing endpoint 'OopS22Mvc76266.Web.Controllers.HomeController.Index (oop-s2-2-mvc-76266)'
+2026-03-27 09:55:50.585 +00:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller OopS22Mvc76266.Web.Controllers.HomeController (oop-s2-2-mvc-76266).
+2026-03-27 09:55:50.586 +00:00 [INF] Executing action method OopS22Mvc76266.Web.Controllers.HomeController.Index (oop-s2-2-mvc-76266) - Validation state: "Valid"
+2026-03-27 09:55:50.586 +00:00 [INF] Executed action method OopS22Mvc76266.Web.Controllers.HomeController.Index (oop-s2-2-mvc-76266), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0126ms.
+2026-03-27 09:55:50.586 +00:00 [INF] Executing ViewResult, running view Index.
+2026-03-27 09:55:50.621 +00:00 [INF] Executed ViewResult - view Index executed in 35.713ms.
+2026-03-27 09:55:50.622 +00:00 [INF] Executed action OopS22Mvc76266.Web.Controllers.HomeController.Index (oop-s2-2-mvc-76266) in 36.2818ms
+2026-03-27 09:55:50.622 +00:00 [INF] Executed endpoint 'OopS22Mvc76266.Web.Controllers.HomeController.Index (oop-s2-2-mvc-76266)'
+2026-03-27 09:55:50.622 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5156/ - 200 null text/html; charset=utf-8 38.0064ms
+2026-03-27 09:56:08.614 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5156/Identity/Account/Login - null null
+2026-03-27 09:56:08.635 +00:00 [INF] Executing endpoint '/Account/Login'
+2026-03-27 09:56:08.692 +00:00 [INF] Route matched with {page = "/Account/Login", area = "Identity", action = "", controller = ""}. Executing page /Account/Login
+2026-03-27 09:56:08.695 +00:00 [INF] Executing handler method Microsoft.AspNetCore.Identity.UI.V5.Pages.Account.Internal.LoginModel.OnGetAsync - ModelState is "Valid"
+2026-03-27 09:56:08.696 +00:00 [INF] AuthenticationScheme: Identity.External signed out.
+2026-03-27 09:56:08.697 +00:00 [INF] Executed handler method OnGetAsync, returned result .
+2026-03-27 09:56:08.699 +00:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2026-03-27 09:56:08.700 +00:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2026-03-27 09:56:08.734 +00:00 [INF] Executed page /Account/Login in 42.0457ms
+2026-03-27 09:56:08.735 +00:00 [INF] Executed endpoint '/Account/Login'
+2026-03-27 09:56:08.735 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5156/Identity/Account/Login - 200 null text/html; charset=utf-8 120.7208ms
+2026-03-27 09:56:08.744 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5156/css/site.css?v=ICAgPqaCDQtMHNMTwr9WpF3QnIVp-vC_HnVioHHNJY0 - null null
+2026-03-27 09:56:08.746 +00:00 [INF] The file /css/site.css was not modified
+2026-03-27 09:56:08.747 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5156/css/site.css?v=ICAgPqaCDQtMHNMTwr9WpF3QnIVp-vC_HnVioHHNJY0 - 304 null text/css 2.9794ms
+2026-03-27 09:56:23.680 +00:00 [INF] Request starting HTTP/1.1 POST http://localhost:5156/Identity/Account/Login - application/x-www-form-urlencoded 261
+2026-03-27 09:56:23.682 +00:00 [INF] Executing endpoint '/Account/Login'
+2026-03-27 09:56:23.683 +00:00 [INF] Route matched with {page = "/Account/Login", area = "Identity", action = "", controller = ""}. Executing page /Account/Login
+2026-03-27 09:56:23.711 +00:00 [INF] Executing handler method Microsoft.AspNetCore.Identity.UI.V5.Pages.Account.Internal.LoginModel.OnPostAsync - ModelState is "Valid"
+2026-03-27 09:56:23.762 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='?' (Size = 14)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2026-03-27 09:56:23.828 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@__user_Id_0='?' (Size = 36)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."ClaimType", "a"."ClaimValue", "a"."UserId"
+FROM "AspNetUserClaims" AS "a"
+WHERE "a"."UserId" = @__user_Id_0
+2026-03-27 09:56:23.834 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@__userId_0='?' (Size = 36)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a0"."Name"
+FROM "AspNetUserRoles" AS "a"
+INNER JOIN "AspNetRoles" AS "a0" ON "a"."RoleId" = "a0"."Id"
+WHERE "a"."UserId" = @__userId_0
+2026-03-27 09:56:23.834 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedName_0='?' (Size = 5)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."ConcurrencyStamp", "a"."Name", "a"."NormalizedName"
+FROM "AspNetRoles" AS "a"
+WHERE "a"."NormalizedName" = @__normalizedName_0
+LIMIT 1
+2026-03-27 09:56:23.838 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@__role_Id_0='?' (Size = 36)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."ClaimType", "a"."ClaimValue"
+FROM "AspNetRoleClaims" AS "a"
+WHERE "a"."RoleId" = @__role_Id_0
+2026-03-27 09:56:23.840 +00:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2026-03-27 09:56:23.840 +00:00 [INF] User logged in.
+2026-03-27 09:56:23.840 +00:00 [INF] Executed handler method OnPostAsync, returned result Microsoft.AspNetCore.Mvc.LocalRedirectResult.
+2026-03-27 09:56:23.840 +00:00 [INF] Executing LocalRedirectResult, redirecting to /.
+2026-03-27 09:56:23.840 +00:00 [INF] Executed page /Account/Login in 156.845ms
+2026-03-27 09:56:23.840 +00:00 [INF] Executed endpoint '/Account/Login'
+2026-03-27 09:56:23.840 +00:00 [INF] Request finished HTTP/1.1 POST http://localhost:5156/Identity/Account/Login - 302 0 null 160.1222ms
+2026-03-27 09:56:23.844 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5156/ - null null
+2026-03-27 09:56:23.846 +00:00 [INF] Executing endpoint 'OopS22Mvc76266.Web.Controllers.HomeController.Index (oop-s2-2-mvc-76266)'
+2026-03-27 09:56:23.846 +00:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller OopS22Mvc76266.Web.Controllers.HomeController (oop-s2-2-mvc-76266).
+2026-03-27 09:56:23.846 +00:00 [INF] Executing action method OopS22Mvc76266.Web.Controllers.HomeController.Index (oop-s2-2-mvc-76266) - Validation state: "Valid"
+2026-03-27 09:56:23.846 +00:00 [INF] Executed action method OopS22Mvc76266.Web.Controllers.HomeController.Index (oop-s2-2-mvc-76266), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0173ms.
+2026-03-27 09:56:23.846 +00:00 [INF] Executing ViewResult, running view Index.
+2026-03-27 09:56:23.847 +00:00 [INF] Executed ViewResult - view Index executed in 0.7722ms.
+2026-03-27 09:56:23.847 +00:00 [INF] Executed action OopS22Mvc76266.Web.Controllers.HomeController.Index (oop-s2-2-mvc-76266) in 1.1372ms
+2026-03-27 09:56:23.847 +00:00 [INF] Executed endpoint 'OopS22Mvc76266.Web.Controllers.HomeController.Index (oop-s2-2-mvc-76266)'
+2026-03-27 09:56:23.847 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5156/ - 200 null text/html; charset=utf-8 2.8107ms
+2026-03-27 09:56:28.856 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5156/Dashboard - null null
+2026-03-27 09:56:28.860 +00:00 [INF] Executing endpoint 'OopS22Mvc76266.Web.Controllers.DashboardController.Index (oop-s2-2-mvc-76266)'
+2026-03-27 09:56:28.860 +00:00 [INF] Route matched with {action = "Index", controller = "Dashboard", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, System.String) on controller OopS22Mvc76266.Web.Controllers.DashboardController (oop-s2-2-mvc-76266).
+2026-03-27 09:56:28.861 +00:00 [INF] Executing action method OopS22Mvc76266.Web.Controllers.DashboardController.Index (oop-s2-2-mvc-76266) - Validation state: "Valid"
+2026-03-27 09:56:28.864 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id"
+FROM "Premises" AS "p"
+2026-03-27 09:56:28.868 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[@__filteredPremisesIds_0='?' (Size = 28), @__monthStart_1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Inspections" AS "i"
+WHERE "i"."PremisesId" IN (
+    SELECT "f"."value"
+    FROM json_each(@__filteredPremisesIds_0) AS "f"
+) AND "i"."InspectionDate" >= @__monthStart_1
+2026-03-27 09:56:28.870 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@__filteredPremisesIds_0='?' (Size = 28), @__monthStart_1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Inspections" AS "i"
+WHERE "i"."PremisesId" IN (
+    SELECT "f"."value"
+    FROM json_each(@__filteredPremisesIds_0) AS "f"
+) AND "i"."InspectionDate" >= @__monthStart_1 AND "i"."Outcome" = 'Fail'
+2026-03-27 09:56:28.871 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@__filteredPremisesIds_0='?' (Size = 28), @__now_1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "FollowUps" AS "f"
+INNER JOIN "Inspections" AS "i" ON "f"."InspectionId" = "i"."Id"
+WHERE "i"."PremisesId" IN (
+    SELECT "f0"."value"
+    FROM json_each(@__filteredPremisesIds_0) AS "f0"
+) AND "f"."Status" = 'Open' AND "f"."DueDate" < @__now_1
+2026-03-27 09:56:28.872 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "t"."Town"
+FROM (
+    SELECT DISTINCT "p"."Town"
+    FROM "Premises" AS "p"
+) AS "t"
+ORDER BY "t"."Town"
+2026-03-27 09:56:28.874 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "t"."RiskRating"
+FROM (
+    SELECT DISTINCT "p"."RiskRating"
+    FROM "Premises" AS "p"
+) AS "t"
+ORDER BY "t"."RiskRating"
+2026-03-27 09:56:28.875 +00:00 [INF] Executed action method OopS22Mvc76266.Web.Controllers.DashboardController.Index (oop-s2-2-mvc-76266), returned result Microsoft.AspNetCore.Mvc.ViewResult in 13.7802ms.
+2026-03-27 09:56:28.876 +00:00 [INF] Executing ViewResult, running view Index.
+2026-03-27 09:56:28.882 +00:00 [INF] Executed ViewResult - view Index executed in 5.4847ms.
+2026-03-27 09:56:28.882 +00:00 [INF] Executed action OopS22Mvc76266.Web.Controllers.DashboardController.Index (oop-s2-2-mvc-76266) in 21.3998ms
+2026-03-27 09:56:28.882 +00:00 [INF] Executed endpoint 'OopS22Mvc76266.Web.Controllers.DashboardController.Index (oop-s2-2-mvc-76266)'
+2026-03-27 09:56:28.883 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5156/Dashboard - 200 null text/html; charset=utf-8 26.9003ms
+2026-03-27 09:56:30.824 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5156/Premises - null null
+2026-03-27 09:56:30.826 +00:00 [INF] Executing endpoint 'OopS22Mvc76266.Web.Controllers.PremisesController.Index (oop-s2-2-mvc-76266)'
+2026-03-27 09:56:30.835 +00:00 [INF] Route matched with {action = "Index", controller = "Premises", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller OopS22Mvc76266.Web.Controllers.PremisesController (oop-s2-2-mvc-76266).
+2026-03-27 09:56:30.836 +00:00 [INF] Executing action method OopS22Mvc76266.Web.Controllers.PremisesController.Index (oop-s2-2-mvc-76266) - Validation state: "Valid"
+2026-03-27 09:56:30.850 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Address", "p"."Name", "p"."RiskRating", "p"."Town"
+FROM "Premises" AS "p"
+ORDER BY "p"."Name"
+2026-03-27 09:56:30.852 +00:00 [INF] Executed action method OopS22Mvc76266.Web.Controllers.PremisesController.Index (oop-s2-2-mvc-76266), returned result Microsoft.AspNetCore.Mvc.ViewResult in 16.2208ms.
+2026-03-27 09:56:30.854 +00:00 [INF] Executing ViewResult, running view Index.
+2026-03-27 09:56:30.863 +00:00 [INF] Executed ViewResult - view Index executed in 9.6701ms.
+2026-03-27 09:56:30.863 +00:00 [INF] Executed action OopS22Mvc76266.Web.Controllers.PremisesController.Index (oop-s2-2-mvc-76266) in 28.1485ms
+2026-03-27 09:56:30.863 +00:00 [INF] Executed endpoint 'OopS22Mvc76266.Web.Controllers.PremisesController.Index (oop-s2-2-mvc-76266)'
+2026-03-27 09:56:30.864 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5156/Premises - 200 null text/html; charset=utf-8 39.7226ms
+2026-03-27 09:56:33.879 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5156/Premises/Create - null null
+2026-03-27 09:56:33.882 +00:00 [INF] Executing endpoint 'OopS22Mvc76266.Web.Controllers.PremisesController.Create (oop-s2-2-mvc-76266)'
+2026-03-27 09:56:33.884 +00:00 [INF] Route matched with {action = "Create", controller = "Premises", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Create() on controller OopS22Mvc76266.Web.Controllers.PremisesController (oop-s2-2-mvc-76266).
+2026-03-27 09:56:33.885 +00:00 [INF] Executing action method OopS22Mvc76266.Web.Controllers.PremisesController.Create (oop-s2-2-mvc-76266) - Validation state: "Valid"
+2026-03-27 09:56:33.885 +00:00 [INF] Executed action method OopS22Mvc76266.Web.Controllers.PremisesController.Create (oop-s2-2-mvc-76266), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.5336ms.
+2026-03-27 09:56:33.888 +00:00 [INF] Executing ViewResult, running view Create.
+2026-03-27 09:56:33.924 +00:00 [INF] Executed ViewResult - view Create executed in 38.3831ms.
+2026-03-27 09:56:33.924 +00:00 [INF] Executed action OopS22Mvc76266.Web.Controllers.PremisesController.Create (oop-s2-2-mvc-76266) in 39.8635ms
+2026-03-27 09:56:33.924 +00:00 [INF] Executed endpoint 'OopS22Mvc76266.Web.Controllers.PremisesController.Create (oop-s2-2-mvc-76266)'
+2026-03-27 09:56:33.925 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5156/Premises/Create - 200 null text/html; charset=utf-8 45.6881ms
+2026-03-27 09:56:36.706 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5156/Inspections - null null
+2026-03-27 09:56:36.708 +00:00 [INF] Executing endpoint 'OopS22Mvc76266.Web.Controllers.InspectionsController.Index (oop-s2-2-mvc-76266)'
+2026-03-27 09:56:36.712 +00:00 [INF] Route matched with {action = "Index", controller = "Inspections", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller OopS22Mvc76266.Web.Controllers.InspectionsController (oop-s2-2-mvc-76266).
+2026-03-27 09:56:36.713 +00:00 [INF] Executing action method OopS22Mvc76266.Web.Controllers.InspectionsController.Index (oop-s2-2-mvc-76266) - Validation state: "Valid"
+2026-03-27 09:56:36.772 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "i"."Id", "i"."InspectionDate", "i"."Notes", "i"."Outcome", "i"."PremisesId", "i"."Score", "p"."Id", "p"."Address", "p"."Name", "p"."RiskRating", "p"."Town"
+FROM "Inspections" AS "i"
+INNER JOIN "Premises" AS "p" ON "i"."PremisesId" = "p"."Id"
+ORDER BY "i"."InspectionDate" DESC
+2026-03-27 09:56:36.810 +00:00 [INF] Executed action method OopS22Mvc76266.Web.Controllers.InspectionsController.Index (oop-s2-2-mvc-76266), returned result Microsoft.AspNetCore.Mvc.ViewResult in 96.7011ms.
+2026-03-27 09:56:36.811 +00:00 [INF] Executing ViewResult, running view Index.
+2026-03-27 09:56:36.817 +00:00 [INF] Executed ViewResult - view Index executed in 6.7254ms.
+2026-03-27 09:56:36.817 +00:00 [INF] Executed action OopS22Mvc76266.Web.Controllers.InspectionsController.Index (oop-s2-2-mvc-76266) in 104.856ms
+2026-03-27 09:56:36.817 +00:00 [INF] Executed endpoint 'OopS22Mvc76266.Web.Controllers.InspectionsController.Index (oop-s2-2-mvc-76266)'
+2026-03-27 09:56:36.818 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5156/Inspections - 200 null text/html; charset=utf-8 111.453ms
+2026-03-27 09:56:41.262 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5156/Inspections/Create - null null
+2026-03-27 09:56:41.281 +00:00 [INF] Executing endpoint 'OopS22Mvc76266.Web.Controllers.InspectionsController.Create (oop-s2-2-mvc-76266)'
+2026-03-27 09:56:41.329 +00:00 [INF] Route matched with {action = "Create", controller = "Inspections", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create() on controller OopS22Mvc76266.Web.Controllers.InspectionsController (oop-s2-2-mvc-76266).
+2026-03-27 09:56:41.330 +00:00 [INF] Executing action method OopS22Mvc76266.Web.Controllers.InspectionsController.Create (oop-s2-2-mvc-76266) - Validation state: "Valid"
+2026-03-27 09:56:41.348 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Address", "p"."Name", "p"."RiskRating", "p"."Town"
+FROM "Premises" AS "p"
+ORDER BY "p"."Name"
+2026-03-27 09:56:41.398 +00:00 [INF] Executed action method OopS22Mvc76266.Web.Controllers.InspectionsController.Create (oop-s2-2-mvc-76266), returned result Microsoft.AspNetCore.Mvc.ViewResult in 68.4481ms.
+2026-03-27 09:56:41.399 +00:00 [INF] Executing ViewResult, running view Create.
+2026-03-27 09:56:41.427 +00:00 [INF] Executed ViewResult - view Create executed in 28.5201ms.
+2026-03-27 09:56:41.427 +00:00 [INF] Executed action OopS22Mvc76266.Web.Controllers.InspectionsController.Create (oop-s2-2-mvc-76266) in 97.8991ms
+2026-03-27 09:56:41.427 +00:00 [INF] Executed endpoint 'OopS22Mvc76266.Web.Controllers.InspectionsController.Create (oop-s2-2-mvc-76266)'
+2026-03-27 09:56:41.428 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5156/Inspections/Create - 200 null text/html; charset=utf-8 168.206ms
+2026-03-27 09:56:43.421 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5156/FollowUps - null null
+2026-03-27 09:56:43.423 +00:00 [INF] Executing endpoint 'OopS22Mvc76266.Web.Controllers.FollowUpsController.Index (oop-s2-2-mvc-76266)'
+2026-03-27 09:56:43.429 +00:00 [INF] Route matched with {action = "Index", controller = "FollowUps", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller OopS22Mvc76266.Web.Controllers.FollowUpsController (oop-s2-2-mvc-76266).
+2026-03-27 09:56:43.430 +00:00 [INF] Executing action method OopS22Mvc76266.Web.Controllers.FollowUpsController.Index (oop-s2-2-mvc-76266) - Validation state: "Valid"
+2026-03-27 09:56:43.452 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "f"."Id", "f"."ClosedDate", "f"."DueDate", "f"."InspectionId", "f"."Status", "i"."Id", "i"."InspectionDate", "i"."Notes", "i"."Outcome", "i"."PremisesId", "i"."Score", "p"."Id", "p"."Address", "p"."Name", "p"."RiskRating", "p"."Town"
+FROM "FollowUps" AS "f"
+INNER JOIN "Inspections" AS "i" ON "f"."InspectionId" = "i"."Id"
+INNER JOIN "Premises" AS "p" ON "i"."PremisesId" = "p"."Id"
+ORDER BY "f"."DueDate"
+2026-03-27 09:56:43.454 +00:00 [INF] Executed action method OopS22Mvc76266.Web.Controllers.FollowUpsController.Index (oop-s2-2-mvc-76266), returned result Microsoft.AspNetCore.Mvc.ViewResult in 23.413ms.
+2026-03-27 09:56:43.455 +00:00 [INF] Executing ViewResult, running view Index.
+2026-03-27 09:56:43.469 +00:00 [INF] Executed ViewResult - view Index executed in 14.988ms.
+2026-03-27 09:56:43.469 +00:00 [INF] Executed action OopS22Mvc76266.Web.Controllers.FollowUpsController.Index (oop-s2-2-mvc-76266) in 40.2119ms
+2026-03-27 09:56:43.469 +00:00 [INF] Executed endpoint 'OopS22Mvc76266.Web.Controllers.FollowUpsController.Index (oop-s2-2-mvc-76266)'
+2026-03-27 09:56:43.470 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5156/FollowUps - 200 null text/html; charset=utf-8 48.668ms
+2026-03-27 09:56:43.825 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5156/css/site.css?v=ICAgPqaCDQtMHNMTwr9WpF3QnIVp-vC_HnVioHHNJY0 - null null
+2026-03-27 09:56:43.826 +00:00 [INF] The file /css/site.css was not modified
+2026-03-27 09:56:43.827 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5156/css/site.css?v=ICAgPqaCDQtMHNMTwr9WpF3QnIVp-vC_HnVioHHNJY0 - 304 null text/css 2.0835ms
+2026-03-27 09:56:44.872 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5156/FollowUps/Create - null null
+2026-03-27 09:56:44.873 +00:00 [INF] Executing endpoint 'OopS22Mvc76266.Web.Controllers.FollowUpsController.Create (oop-s2-2-mvc-76266)'
+2026-03-27 09:56:44.878 +00:00 [INF] Route matched with {action = "Create", controller = "FollowUps", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create() on controller OopS22Mvc76266.Web.Controllers.FollowUpsController (oop-s2-2-mvc-76266).
+2026-03-27 09:56:44.878 +00:00 [INF] Executing action method OopS22Mvc76266.Web.Controllers.FollowUpsController.Create (oop-s2-2-mvc-76266) - Validation state: "Valid"
+2026-03-27 09:56:44.892 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "i"."Id", "i"."InspectionDate", "i"."Notes", "i"."Outcome", "i"."PremisesId", "i"."Score", "p"."Id", "p"."Address", "p"."Name", "p"."RiskRating", "p"."Town"
+FROM "Inspections" AS "i"
+INNER JOIN "Premises" AS "p" ON "i"."PremisesId" = "p"."Id"
+ORDER BY "i"."InspectionDate" DESC
+2026-03-27 09:56:44.930 +00:00 [INF] Executed action method OopS22Mvc76266.Web.Controllers.FollowUpsController.Create (oop-s2-2-mvc-76266), returned result Microsoft.AspNetCore.Mvc.ViewResult in 51.8186ms.
+2026-03-27 09:56:44.931 +00:00 [INF] Executing ViewResult, running view Create.
+2026-03-27 09:56:44.948 +00:00 [INF] Executed ViewResult - view Create executed in 17.1451ms.
+2026-03-27 09:56:44.948 +00:00 [INF] Executed action OopS22Mvc76266.Web.Controllers.FollowUpsController.Create (oop-s2-2-mvc-76266) in 69.9971ms
+2026-03-27 09:56:44.948 +00:00 [INF] Executed endpoint 'OopS22Mvc76266.Web.Controllers.FollowUpsController.Create (oop-s2-2-mvc-76266)'
+2026-03-27 09:56:44.949 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5156/FollowUps/Create - 200 null text/html; charset=utf-8 76.9252ms

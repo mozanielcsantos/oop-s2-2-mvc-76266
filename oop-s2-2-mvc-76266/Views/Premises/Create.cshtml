@@ -1,0 +1,46 @@
+@model FoodSafety.Domain.Entities.Premises
+
+@{
+    ViewData["Title"] = "Create Premises";
+}
+
+<h1 class="page-title">Add Premises</h1>
+<p class="page-subtitle">Create a new food premises record for future inspections and follow-up actions.</p>
+
+<div class="card panel-card p-4">
+    <form asp-action="Create" method="post">
+        <div asp-validation-summary="All" class="text-danger mb-3"></div>
+
+        <div class="mb-3">
+            <label asp-for="Name" class="form-label"></label>
+            <input asp-for="Name" class="form-control" />
+            <span asp-validation-for="Name" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Address" class="form-label"></label>
+            <input asp-for="Address" class="form-control" />
+            <span asp-validation-for="Address" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Town" class="form-label"></label>
+            <input asp-for="Town" class="form-control" />
+            <span asp-validation-for="Town" class="text-danger"></span>
+        </div>
+
+        <div class="mb-4">
+            <label asp-for="RiskRating" class="form-label"></label>
+            <select asp-for="RiskRating" class="form-select">
+                <option value="">Select risk rating</option>
+                <option value="Low">Low</option>
+                <option value="Medium">Medium</option>
+                <option value="High">High</option>
+            </select>
+            <span asp-validation-for="RiskRating" class="text-danger"></span>
+        </div>
+
+        <button type="submit" class="btn btn-primary-soft">Save Premises</button>
+        <a asp-action="Index" class="btn btn-outline-secondary ms-2">Back</a>
+    </form>
+</div>

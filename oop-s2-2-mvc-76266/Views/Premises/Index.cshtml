@@ -4,33 +4,49 @@
     ViewData["Title"] = "Premises";
 }
 
-<h1 class="mb-4">Premises</h1>
+<div class="d-flex justify-content-between align-items-center mb-4">
+    <div>
+        <h1 class="page-title mb-1">Premises</h1>
+        <p class="page-subtitle mb-0">View and manage food business locations and their risk ratings.</p>
+    </div>
 
-@if (!Model.Any())
-{
-    <p>No premises found.</p>
-}
-else
-{
-    <table class="table table-striped table-bordered">
-        <thead>
-        <tr>
-            <th>Name</th>
-            <th>Address</th>
-            <th>Town</th>
-            <th>Risk Rating</th>
-        </tr>
-        </thead>
-        <tbody>
-        @foreach (var premises in Model)
-        {
+    @if (User.IsInRole("Admin"))
+    {
+        <a asp-action="Create" class="btn btn-primary-soft">Add Premises</a>
+    }
+</div>
+
+<div class="card panel-card p-3">
+    <div class="table-responsive">
+        <table class="table align-middle mb-0">
+            <thead>
             <tr>
-                <td>@premises.Name</td>
-                <td>@premises.Address</td>
-                <td>@premises.Town</td>
-                <td>@premises.RiskRating</td>
+                <th>Name</th>
+                <th>Address</th>
+                <th>Town</th>
+                <th>Risk Rating</th>
             </tr>
-        }
-        </tbody>
-    </table>
-}
+            </thead>
+            <tbody>
+            @if (!Model.Any())
+            {
+                <tr>
+                    <td colspan="4" class="empty-state text-center">No premises found.</td>
+                </tr>
+            }
+            else
+            {
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.Name</td>
+                        <td>@item.Address</td>
+                        <td>@item.Town</td>
+                        <td>@item.RiskRating</td>
+                    </tr>
+                }
+            }
+            </tbody>
+        </table>
+    </div>
+</div>

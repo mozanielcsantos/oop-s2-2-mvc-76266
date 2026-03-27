@@ -4,35 +4,64 @@
     ViewData["Title"] = "Follow-Ups";
 }
 
-<h1 class="mb-4">Follow-Ups</h1>
+<div class="d-flex justify-content-between align-items-center mb-4">
+    <div>
+        <h1 class="page-title mb-1">Follow-Ups</h1>
+        <p class="page-subtitle mb-0">Monitor open actions, overdue items, and completed follow-up work.</p>
+    </div>
 
-@if (!Model.Any())
-{
-    <p>No follow-ups found.</p>
-}
-else
-{
-    <table class="table table-striped table-bordered">
-        <thead>
-        <tr>
-            <th>Premises</th>
-            <th>Inspection Date</th>
-            <th>Due Date</th>
-            <th>Status</th>
-            <th>Closed Date</th>
-        </tr>
-        </thead>
-        <tbody>
-        @foreach (var followUp in Model)
-        {
-            <tr>
-                <td>@followUp.Inspection?.Premises?.Name</td>
-                <td>@followUp.Inspection?.InspectionDate.ToString("yyyy-MM-dd")</td>
-                <td>@followUp.DueDate.ToString("yyyy-MM-dd")</td>
-                <td>@followUp.Status</td>
-                <td>@(followUp.ClosedDate.HasValue ? followUp.ClosedDate.Value.ToString("yyyy-MM-dd") : "Open")</td>
-            </tr>
-        }
-        </tbody>
-    </table>
-}
+    @if (User.IsInRole("Admin") || User.IsInRole("Inspector"))
+    {
+        <a asp-action="Create" class="btn btn-primary-soft">Create Follow-Up</a>
+    }
+</div>
+
+<div class="card panel-card p-3">
+    <div class="table-responsive">
+        <table class="table align-middle mb-0">
+            <thead>
+                <tr>
+                    <th>Premises</th>
+                    <th>Inspection Date</th>
+                    <th>Due Date</th>
+                    <th>Status</th>
+                    <th>Closed Date</th>
+                    <th style="width: 140px;">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+            @if (!Model.Any())
+            {
+                <tr>
+                    <td colspan="6" class="empty-state text-center">No follow-ups found.</td>
+                </tr>
+            }
+            else
+            {
+                @foreach (var item in Model)
+                {
+                    var isOpen = item.Status == "Open";
+
+                    <tr>
+                        <td>@item.Inspection?.Premises?.Name</td>
+                        <td>@item.Inspection?.InspectionDate.ToString("yyyy-MM-dd")</td>
+                        <td>@item.DueDate.ToString("yyyy-MM-dd")</td>
+                        <td>
+                            <span class="@(isOpen ? "status-open" : "status-closed")">
+                                @item.Status
+                            </span>
+                        </td>
+                        <td>@(item.ClosedDate.HasValue ? item.ClosedDate.Value.ToString("yyyy-MM-dd") : "-")</td>
+                        <td>
+                            @if (isOpen && (User.IsInRole("Admin") || User.IsInRole("Inspector")))
+                            {
+                                <a asp-action="Close" asp-route-id="@item.Id" class="btn btn-sm btn-success">Close</a>
+                            }
+                        </td>
+                    </tr>
+                }
+            }
+            </tbody>
+        </table>
+    </div>
+</div>
