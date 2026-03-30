@@ -11,7 +11,7 @@ using OopS22Mvc76266.Web.Data;
 namespace oops22mvc76266.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20260323180217_InitialCreate")]
+    [Migration("20260330184727_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />

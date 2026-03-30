@@ -7,7 +7,6 @@ using Serilog.Context;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Configure Serilog
 Log.Logger = new LoggerConfiguration()
     .Enrich.FromLogContext()
     .Enrich.WithProperty("Application", "FoodSafetyInspectionTracker")
@@ -18,14 +17,11 @@ Log.Logger = new LoggerConfiguration()
 
 builder.Host.UseSerilog();
 
-// Add services to the container
 builder.Services.AddControllersWithViews();
 
-// Configure DbContext with SQLite
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-// Configure Identity
 builder.Services
     .AddDefaultIdentity<IdentityUser>(options =>
     {
@@ -36,7 +32,6 @@ builder.Services
 
 var app = builder.Build();
 
-// Global error handling + friendly failures
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Home/Error");
@@ -47,7 +42,6 @@ else
     app.UseExceptionHandler("/Home/Error");
 }
 
-// Enrich logs with UserName from HttpContext
 app.Use(async (context, next) =>
 {
     var userName = context.User?.Identity?.IsAuthenticated == true
@@ -68,7 +62,6 @@ app.UseRouting();
 app.UseAuthentication();
 app.UseAuthorization();
 
-// Seed data + create roles + assign admin role
 using (var scope = app.Services.CreateScope())
 {
     var db = scope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
@@ -90,7 +83,7 @@ using (var scope = app.Services.CreateScope())
     }
 
     var adminEmail = "admin@test.com";
-    var adminPassword = "Admin123!";
+    var adminPassword = "Password123!";
 
     var adminUser = await userManager.FindByEmailAsync(adminEmail);
 
@@ -103,40 +96,92 @@ using (var scope = app.Services.CreateScope())
             EmailConfirmed = true
         };
 
-        var createResult = await userManager.CreateAsync(adminUser, adminPassword);
+        var result = await userManager.CreateAsync(adminUser, adminPassword);
 
-        if (createResult.Succeeded)
+        if (result.Succeeded)
         {
-            Log.Information("Seed admin user created: {Email}", adminEmail);
+            Log.Information("Seed user created: {Email}", adminEmail);
         }
         else
         {
-            Log.Warning("Seed admin user creation failed for {Email}: {Errors}",
-                adminEmail,
-                string.Join(", ", createResult.Errors.Select(e => e.Description)));
+            Log.Warning("Failed to create seed admin user: {Email}", adminEmail);
         }
     }
 
-    if (adminUser != null && !await userManager.IsInRoleAsync(adminUser, "Admin"))
+    if (!await userManager.IsInRoleAsync(adminUser, "Admin"))
     {
-        var roleResult = await userManager.AddToRoleAsync(adminUser, "Admin");
+        await userManager.AddToRoleAsync(adminUser, "Admin");
+        Log.Information("Role assigned: {Email} -> Admin", adminEmail);
+    }
 
-        if (roleResult.Succeeded)
+    var inspectorEmail = "inspector@test.com";
+    var inspectorPassword = "Password123!";
+
+    var inspectorUser = await userManager.FindByEmailAsync(inspectorEmail);
+
+    if (inspectorUser == null)
+    {
+        inspectorUser = new IdentityUser
         {
-            Log.Information("Admin role assigned to seed user: {Email}", adminEmail);
+            UserName = inspectorEmail,
+            Email = inspectorEmail,
+            EmailConfirmed = true
+        };
+
+        var result = await userManager.CreateAsync(inspectorUser, inspectorPassword);
+
+        if (result.Succeeded)
+        {
+            Log.Information("Seed user created: {Email}", inspectorEmail);
         }
         else
         {
-            Log.Warning("Admin role assignment failed for {Email}: {Errors}",
-                adminEmail,
-                string.Join(", ", roleResult.Errors.Select(e => e.Description)));
+            Log.Warning("Failed to create seed inspector user: {Email}", inspectorEmail);
         }
+    }
+
+    if (!await userManager.IsInRoleAsync(inspectorUser, "Inspector"))
+    {
+        await userManager.AddToRoleAsync(inspectorUser, "Inspector");
+        Log.Information("Role assigned: {Email} -> Inspector", inspectorEmail);
+    }
+
+    var viewerEmail = "viewer@test.com";
+    var viewerPassword = "Password123!";
+
+    var viewerUser = await userManager.FindByEmailAsync(viewerEmail);
+
+    if (viewerUser == null)
+    {
+        viewerUser = new IdentityUser
+        {
+            UserName = viewerEmail,
+            Email = viewerEmail,
+            EmailConfirmed = true
+        };
+
+        var result = await userManager.CreateAsync(viewerUser, viewerPassword);
+
+        if (result.Succeeded)
+        {
+            Log.Information("Seed user created: {Email}", viewerEmail);
+        }
+        else
+        {
+            Log.Warning("Failed to create seed viewer user: {Email}", viewerEmail);
+        }
+    }
+
+    if (!await userManager.IsInRoleAsync(viewerUser, "Viewer"))
+    {
+        await userManager.AddToRoleAsync(viewerUser, "Viewer");
+        Log.Information("Role assigned: {Email} -> Viewer", viewerEmail);
     }
 }
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    pattern: "{controller=Dashboard}/{action=Index}/{id?}");
 
 app.MapRazorPages();
 

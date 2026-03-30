@@ -1,11 +1,10 @@
 bin/
 obj/
-.idea/
 .vs/
-*.user
-*.suo
-*.db
-*.loglogs/
+.idea/
+logs/
 *.db
 *.db-shm
 *.db-wal
+*.user
+*.suo
