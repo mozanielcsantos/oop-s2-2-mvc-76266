@@ -1,6 +1,8 @@
 ﻿using FoodSafety.Domain.Entities;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.Data.Sqlite;
 using Microsoft.EntityFrameworkCore;
+using OopS22Mvc76266.Web.Controllers;
 using OopS22Mvc76266.Web.Data;
 using Xunit;
 
@@ -199,28 +201,63 @@ public class UnitTest1 : IDisposable
     }
 
     [Fact]
-    public void Inspection_outcome_rule_matches_score_threshold()
+    public void Role_authorization_attributes_are_applied_correctly()
     {
-        var passingInspection = new Inspection
-        {
-            PremisesId = 1,
-            InspectionDate = DateTime.UtcNow,
-            Score = 75,
-            Outcome = 75 >= 60 ? "Pass" : "Fail",
-            Notes = "Generated in test"
-        };
+        var premisesControllerAttribute = typeof(PremisesController)
+            .GetCustomAttributes(typeof(AuthorizeAttribute), true)
+            .Cast<AuthorizeAttribute>()
+            .FirstOrDefault();
 
-        var failingInspection = new Inspection
-        {
-            PremisesId = 1,
-            InspectionDate = DateTime.UtcNow,
-            Score = 40,
-            Outcome = 40 >= 60 ? "Pass" : "Fail",
-            Notes = "Generated in test"
-        };
+        var inspectionsControllerAttribute = typeof(InspectionsController)
+            .GetCustomAttributes(typeof(AuthorizeAttribute), true)
+            .Cast<AuthorizeAttribute>()
+            .FirstOrDefault();
 
-        Assert.Equal("Pass", passingInspection.Outcome);
-        Assert.Equal("Fail", failingInspection.Outcome);
+        var followUpsControllerAttribute = typeof(FollowUpsController)
+            .GetCustomAttributes(typeof(AuthorizeAttribute), true)
+            .Cast<AuthorizeAttribute>()
+            .FirstOrDefault();
+
+        var dashboardControllerAttribute = typeof(DashboardController)
+            .GetCustomAttributes(typeof(AuthorizeAttribute), true)
+            .Cast<AuthorizeAttribute>()
+            .FirstOrDefault();
+
+        Assert.NotNull(premisesControllerAttribute);
+        Assert.NotNull(inspectionsControllerAttribute);
+        Assert.NotNull(followUpsControllerAttribute);
+        Assert.NotNull(dashboardControllerAttribute);
+
+        Assert.Equal("Admin,Inspector,Viewer", premisesControllerAttribute!.Roles);
+        Assert.Equal("Admin,Inspector,Viewer", inspectionsControllerAttribute!.Roles);
+        Assert.Equal("Admin,Inspector,Viewer", followUpsControllerAttribute!.Roles);
+        Assert.Equal("Admin,Inspector,Viewer", dashboardControllerAttribute!.Roles);
+
+        var premisesCreateAttribute = typeof(PremisesController)
+            .GetMethod("Create", new Type[] { })!
+            .GetCustomAttributes(typeof(AuthorizeAttribute), true)
+            .Cast<AuthorizeAttribute>()
+            .FirstOrDefault();
+
+        var inspectionsCreateAttribute = typeof(InspectionsController)
+            .GetMethod("Create", new Type[] { })!
+            .GetCustomAttributes(typeof(AuthorizeAttribute), true)
+            .Cast<AuthorizeAttribute>()
+            .FirstOrDefault();
+
+        var followUpsCreateAttribute = typeof(FollowUpsController)
+            .GetMethod("Create", new Type[] { })!
+            .GetCustomAttributes(typeof(AuthorizeAttribute), true)
+            .Cast<AuthorizeAttribute>()
+            .FirstOrDefault();
+
+        Assert.NotNull(premisesCreateAttribute);
+        Assert.NotNull(inspectionsCreateAttribute);
+        Assert.NotNull(followUpsCreateAttribute);
+
+        Assert.Equal("Admin", premisesCreateAttribute!.Roles);
+        Assert.Equal("Admin,Inspector", inspectionsCreateAttribute!.Roles);
+        Assert.Equal("Admin,Inspector", followUpsCreateAttribute!.Roles);
     }
 
     public void Dispose()

@@ -1484,3 +1484,4 @@ ORDER BY "i"."InspectionDate" DESC
 2026-03-27 09:56:44.948 +00:00 [INF] Executed action OopS22Mvc76266.Web.Controllers.FollowUpsController.Create (oop-s2-2-mvc-76266) in 69.9971ms
 2026-03-27 09:56:44.948 +00:00 [INF] Executed endpoint 'OopS22Mvc76266.Web.Controllers.FollowUpsController.Create (oop-s2-2-mvc-76266)'
 2026-03-27 09:56:44.949 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5156/FollowUps/Create - 200 null text/html; charset=utf-8 76.9252ms
+2026-03-27 10:08:44.316 +00:00 [INF] Application is shutting down...

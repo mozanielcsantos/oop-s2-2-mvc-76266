@@ -133,11 +133,14 @@ namespace OopS22Mvc76266.Web.Controllers
                 .OrderByDescending(i => i.InspectionDate)
                 .ToListAsync();
 
-            var items = inspections.Select(i => new
-            {
-                i.Id,
-                Display = $"{i.InspectionDate:yyyy-MM-dd} - {i.Premises!.Name} ({i.Outcome})"
-            });
+            var items = inspections
+                .Where(i => i.Premises != null)
+                .Select(i => new
+                {
+                    i.Id,
+                    Display = $"{i.InspectionDate:yyyy-MM-dd} - {i.Premises!.Name} ({i.Outcome})"
+                })
+                .ToList();
 
             ViewBag.InspectionId = new SelectList(items, "Id", "Display");
         }

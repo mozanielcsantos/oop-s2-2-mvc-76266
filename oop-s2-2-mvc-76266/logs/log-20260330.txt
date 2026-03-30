@@ -1,0 +1,728 @@
+2026-03-30 09:53:06.514 +01:00 [INF] User profile is available. Using '/Users/mozanielclementinodossantos/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2026-03-30 09:53:11.090 +01:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2026-03-30 09:53:11.098 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2026-03-30 09:53:11.104 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2026-03-30 09:53:11.116 +01:00 [INF] No migrations were applied. The database is already up to date.
+2026-03-30 09:53:12.202 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2026-03-30 09:53:12.203 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2026-03-30 09:53:12.204 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2026-03-30 09:53:12.204 +01:00 [INF] No migrations were applied. The database is already up to date.
+2026-03-30 09:53:12.307 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Premises" AS "p")
+2026-03-30 09:53:12.356 +01:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedName_0='?' (Size = 5)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."ConcurrencyStamp", "a"."Name", "a"."NormalizedName"
+FROM "AspNetRoles" AS "a"
+WHERE "a"."NormalizedName" = @__normalizedName_0
+LIMIT 1
+2026-03-30 09:53:12.380 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedName_0='?' (Size = 9)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."ConcurrencyStamp", "a"."Name", "a"."NormalizedName"
+FROM "AspNetRoles" AS "a"
+WHERE "a"."NormalizedName" = @__normalizedName_0
+LIMIT 1
+2026-03-30 09:53:12.381 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedName_0='?' (Size = 6)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."ConcurrencyStamp", "a"."Name", "a"."NormalizedName"
+FROM "AspNetRoles" AS "a"
+WHERE "a"."NormalizedName" = @__normalizedName_0
+LIMIT 1
+2026-03-30 09:53:12.385 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedEmail_0='?' (Size = 14)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2026-03-30 09:53:12.406 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedRoleName_0='?' (Size = 5)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."ConcurrencyStamp", "a"."Name", "a"."NormalizedName"
+FROM "AspNetRoles" AS "a"
+WHERE "a"."NormalizedName" = @__normalizedRoleName_0
+LIMIT 2
+2026-03-30 09:53:12.419 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (Size = 36), @__p_1='?' (Size = 36)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."UserId", "a"."RoleId"
+FROM "AspNetUserRoles" AS "a"
+WHERE "a"."UserId" = @__p_0 AND "a"."RoleId" = @__p_1
+LIMIT 1
+2026-03-30 09:53:12.541 +01:00 [INF] Now listening on: http://localhost:5156
+2026-03-30 09:53:12.542 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-30 09:53:12.542 +01:00 [INF] Hosting environment: Development
+2026-03-30 09:53:12.542 +01:00 [INF] Content root path: /Users/mozanielclementinodossantos/Documents/oop-s2-2-mvc-76266/oop-s2-2-mvc-76266
+2026-03-30 09:54:45.634 +01:00 [INF] Application is shutting down...
+2026-03-30 09:54:48.870 +01:00 [INF] User profile is available. Using '/Users/mozanielclementinodossantos/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2026-03-30 09:54:49.336 +01:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2026-03-30 09:54:49.345 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2026-03-30 09:54:49.353 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2026-03-30 09:54:49.366 +01:00 [INF] No migrations were applied. The database is already up to date.
+2026-03-30 09:54:49.369 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2026-03-30 09:54:49.369 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2026-03-30 09:54:49.369 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2026-03-30 09:54:49.370 +01:00 [INF] No migrations were applied. The database is already up to date.
+2026-03-30 09:54:49.468 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Premises" AS "p")
+2026-03-30 09:54:49.516 +01:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedName_0='?' (Size = 5)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."ConcurrencyStamp", "a"."Name", "a"."NormalizedName"
+FROM "AspNetRoles" AS "a"
+WHERE "a"."NormalizedName" = @__normalizedName_0
+LIMIT 1
+2026-03-30 09:54:49.543 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedName_0='?' (Size = 9)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."ConcurrencyStamp", "a"."Name", "a"."NormalizedName"
+FROM "AspNetRoles" AS "a"
+WHERE "a"."NormalizedName" = @__normalizedName_0
+LIMIT 1
+2026-03-30 09:54:49.545 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedName_0='?' (Size = 6)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."ConcurrencyStamp", "a"."Name", "a"."NormalizedName"
+FROM "AspNetRoles" AS "a"
+WHERE "a"."NormalizedName" = @__normalizedName_0
+LIMIT 1
+2026-03-30 09:54:49.551 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedEmail_0='?' (Size = 14)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2026-03-30 09:54:49.570 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedRoleName_0='?' (Size = 5)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."ConcurrencyStamp", "a"."Name", "a"."NormalizedName"
+FROM "AspNetRoles" AS "a"
+WHERE "a"."NormalizedName" = @__normalizedRoleName_0
+LIMIT 2
+2026-03-30 09:54:49.581 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (Size = 36), @__p_1='?' (Size = 36)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."UserId", "a"."RoleId"
+FROM "AspNetUserRoles" AS "a"
+WHERE "a"."UserId" = @__p_0 AND "a"."RoleId" = @__p_1
+LIMIT 1
+2026-03-30 09:54:49.678 +01:00 [INF] Now listening on: http://localhost:5156
+2026-03-30 09:54:49.679 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-30 09:54:49.679 +01:00 [INF] Hosting environment: Development
+2026-03-30 09:54:49.679 +01:00 [INF] Content root path: /Users/mozanielclementinodossantos/Documents/oop-s2-2-mvc-76266/oop-s2-2-mvc-76266
+2026-03-30 09:54:51.650 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5156/ - null null
+2026-03-30 09:54:51.661 +01:00 [WRN] Failed to determine the https port for redirect.
+2026-03-30 09:54:51.719 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (Size = 36)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."Id" = @__p_0
+LIMIT 1
+2026-03-30 09:54:51.748 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__user_Id_0='?' (Size = 36)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."ClaimType", "a"."ClaimValue", "a"."UserId"
+FROM "AspNetUserClaims" AS "a"
+WHERE "a"."UserId" = @__user_Id_0
+2026-03-30 09:54:51.763 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__userId_0='?' (Size = 36)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a0"."Name"
+FROM "AspNetUserRoles" AS "a"
+INNER JOIN "AspNetRoles" AS "a0" ON "a"."RoleId" = "a0"."Id"
+WHERE "a"."UserId" = @__userId_0
+2026-03-30 09:54:51.763 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedName_0='?' (Size = 5)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."ConcurrencyStamp", "a"."Name", "a"."NormalizedName"
+FROM "AspNetRoles" AS "a"
+WHERE "a"."NormalizedName" = @__normalizedName_0
+LIMIT 1
+2026-03-30 09:54:51.769 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__role_Id_0='?' (Size = 36)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."ClaimType", "a"."ClaimValue"
+FROM "AspNetRoleClaims" AS "a"
+WHERE "a"."RoleId" = @__role_Id_0
+2026-03-30 09:54:51.773 +01:00 [INF] Executing endpoint 'OopS22Mvc76266.Web.Controllers.HomeController.Index (oop-s2-2-mvc-76266)'
+2026-03-30 09:54:51.778 +01:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller OopS22Mvc76266.Web.Controllers.HomeController (oop-s2-2-mvc-76266).
+2026-03-30 09:54:51.781 +01:00 [INF] Executing action method OopS22Mvc76266.Web.Controllers.HomeController.Index (oop-s2-2-mvc-76266) - Validation state: "Valid"
+2026-03-30 09:54:51.786 +01:00 [INF] Executed action method OopS22Mvc76266.Web.Controllers.HomeController.Index (oop-s2-2-mvc-76266), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.8318ms.
+2026-03-30 09:54:51.794 +01:00 [INF] Executing ViewResult, running view Index.
+2026-03-30 09:54:51.888 +01:00 [INF] Executed ViewResult - view Index executed in 96.6276ms.
+2026-03-30 09:54:51.888 +01:00 [INF] Executed action OopS22Mvc76266.Web.Controllers.HomeController.Index (oop-s2-2-mvc-76266) in 110.345ms
+2026-03-30 09:54:51.888 +01:00 [INF] Executed endpoint 'OopS22Mvc76266.Web.Controllers.HomeController.Index (oop-s2-2-mvc-76266)'
+2026-03-30 09:54:51.892 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5156/ - 200 null text/html; charset=utf-8 243.5787ms
+2026-03-30 09:54:51.893 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5156/lib/bootstrap/dist/js/bootstrap.bundle.min.js - null null
+2026-03-30 09:54:51.893 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5156/lib/bootstrap/dist/css/bootstrap.min.css - null null
+2026-03-30 09:54:51.900 +01:00 [INF] The file /lib/bootstrap/dist/css/bootstrap.min.css was not modified
+2026-03-30 09:54:51.900 +01:00 [INF] The file /lib/bootstrap/dist/js/bootstrap.bundle.min.js was not modified
+2026-03-30 09:54:51.901 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5156/lib/bootstrap/dist/js/bootstrap.bundle.min.js - 304 null text/javascript 7.8641ms
+2026-03-30 09:54:51.901 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5156/lib/bootstrap/dist/css/bootstrap.min.css - 304 null text/css 7.7177ms
+2026-03-30 09:54:51.920 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5156/css/site.css?v=ICAgPqaCDQtMHNMTwr9WpF3QnIVp-vC_HnVioHHNJY0 - null null
+2026-03-30 09:54:51.932 +01:00 [INF] Sending file. Request path: '/css/site.css'. Physical path: '/Users/mozanielclementinodossantos/Documents/oop-s2-2-mvc-76266/oop-s2-2-mvc-76266/wwwroot/css/site.css'
+2026-03-30 09:54:51.935 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5156/css/site.css?v=ICAgPqaCDQtMHNMTwr9WpF3QnIVp-vC_HnVioHHNJY0 - 200 2371 text/css 14.2432ms
+2026-03-30 09:54:51.998 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5156/apple-touch-icon-precomposed.png - null null
+2026-03-30 09:54:51.999 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5156/apple-touch-icon.png - null null
+2026-03-30 09:54:52.000 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5156/favicon.ico - null null
+2026-03-30 09:54:52.002 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5156/apple-touch-icon.png - 404 0 null 2.8693ms
+2026-03-30 09:54:52.002 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5156/apple-touch-icon-precomposed.png - 404 0 null 3.8186ms
+2026-03-30 09:54:52.004 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5156/apple-touch-icon-precomposed.png, Response status code: 404
+2026-03-30 09:54:52.005 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5156/apple-touch-icon.png, Response status code: 404
+2026-03-30 09:54:52.056 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5156/apple-touch-icon-precomposed.png - null null
+2026-03-30 09:54:52.059 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5156/apple-touch-icon-precomposed.png - 404 0 null 2.8888ms
+2026-03-30 09:54:52.059 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5156/apple-touch-icon-precomposed.png, Response status code: 404
+2026-03-30 09:54:52.061 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5156/apple-touch-icon.png - null null
+2026-03-30 09:54:52.062 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5156/apple-touch-icon.png - 404 0 null 0.4152ms
+2026-03-30 09:54:52.062 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5156/apple-touch-icon.png, Response status code: 404
+2026-03-30 09:54:52.063 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5156/favicon.ico - null null
+2026-03-30 09:54:53.205 +01:00 [INF] Sending file. Request path: '/favicon.ico'. Physical path: '/Users/mozanielclementinodossantos/Documents/oop-s2-2-mvc-76266/oop-s2-2-mvc-76266/wwwroot/favicon.ico'
+2026-03-30 09:54:53.205 +01:00 [INF] Sending file. Request path: '/favicon.ico'. Physical path: '/Users/mozanielclementinodossantos/Documents/oop-s2-2-mvc-76266/oop-s2-2-mvc-76266/wwwroot/favicon.ico'
+2026-03-30 09:54:53.206 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5156/favicon.ico - 200 5430 image/x-icon 1142.9545ms
+2026-03-30 09:54:53.206 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5156/favicon.ico - 200 5430 image/x-icon 1206.4783ms
+2026-03-30 09:56:44.338 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5156/Dashboard - null null
+2026-03-30 09:56:44.384 +01:00 [INF] Executing endpoint 'OopS22Mvc76266.Web.Controllers.DashboardController.Index (oop-s2-2-mvc-76266)'
+2026-03-30 09:56:44.412 +01:00 [INF] Route matched with {action = "Index", controller = "Dashboard", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, System.String) on controller OopS22Mvc76266.Web.Controllers.DashboardController (oop-s2-2-mvc-76266).
+2026-03-30 09:56:44.421 +01:00 [INF] Executing action method OopS22Mvc76266.Web.Controllers.DashboardController.Index (oop-s2-2-mvc-76266) - Validation state: "Valid"
+2026-03-30 09:56:44.490 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id"
+FROM "Premises" AS "p"
+2026-03-30 09:56:44.549 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__filteredPremisesIds_0='?' (Size = 28), @__monthStart_1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Inspections" AS "i"
+WHERE "i"."PremisesId" IN (
+    SELECT "f"."value"
+    FROM json_each(@__filteredPremisesIds_0) AS "f"
+) AND "i"."InspectionDate" >= @__monthStart_1
+2026-03-30 09:56:44.552 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__filteredPremisesIds_0='?' (Size = 28), @__monthStart_1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Inspections" AS "i"
+WHERE "i"."PremisesId" IN (
+    SELECT "f"."value"
+    FROM json_each(@__filteredPremisesIds_0) AS "f"
+) AND "i"."InspectionDate" >= @__monthStart_1 AND "i"."Outcome" = 'Fail'
+2026-03-30 09:56:44.568 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__filteredPremisesIds_0='?' (Size = 28), @__now_1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "FollowUps" AS "f"
+INNER JOIN "Inspections" AS "i" ON "f"."InspectionId" = "i"."Id"
+WHERE "i"."PremisesId" IN (
+    SELECT "f0"."value"
+    FROM json_each(@__filteredPremisesIds_0) AS "f0"
+) AND "f"."Status" = 'Open' AND "f"."DueDate" < @__now_1
+2026-03-30 09:56:44.580 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "t"."Town"
+FROM (
+    SELECT DISTINCT "p"."Town"
+    FROM "Premises" AS "p"
+) AS "t"
+ORDER BY "t"."Town"
+2026-03-30 09:56:44.582 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "t"."RiskRating"
+FROM (
+    SELECT DISTINCT "p"."RiskRating"
+    FROM "Premises" AS "p"
+) AS "t"
+ORDER BY "t"."RiskRating"
+2026-03-30 09:56:44.583 +01:00 [INF] Executed action method OopS22Mvc76266.Web.Controllers.DashboardController.Index (oop-s2-2-mvc-76266), returned result Microsoft.AspNetCore.Mvc.ViewResult in 162.1417ms.
+2026-03-30 09:56:44.587 +01:00 [INF] Executing ViewResult, running view Index.
+2026-03-30 09:56:44.601 +01:00 [INF] Executed ViewResult - view Index executed in 17.9034ms.
+2026-03-30 09:56:44.601 +01:00 [INF] Executed action OopS22Mvc76266.Web.Controllers.DashboardController.Index (oop-s2-2-mvc-76266) in 189.227ms
+2026-03-30 09:56:44.602 +01:00 [INF] Executed endpoint 'OopS22Mvc76266.Web.Controllers.DashboardController.Index (oop-s2-2-mvc-76266)'
+2026-03-30 09:56:44.602 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5156/Dashboard - 200 null text/html; charset=utf-8 264.3755ms
+2026-03-30 09:56:46.850 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5156/Premises - null null
+2026-03-30 09:56:46.870 +01:00 [INF] Executing endpoint 'OopS22Mvc76266.Web.Controllers.PremisesController.Index (oop-s2-2-mvc-76266)'
+2026-03-30 09:56:46.875 +01:00 [INF] Route matched with {action = "Index", controller = "Premises", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller OopS22Mvc76266.Web.Controllers.PremisesController (oop-s2-2-mvc-76266).
+2026-03-30 09:56:46.876 +01:00 [INF] Executing action method OopS22Mvc76266.Web.Controllers.PremisesController.Index (oop-s2-2-mvc-76266) - Validation state: "Valid"
+2026-03-30 09:56:46.882 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Address", "p"."Name", "p"."RiskRating", "p"."Town"
+FROM "Premises" AS "p"
+ORDER BY "p"."Name"
+2026-03-30 09:56:46.883 +01:00 [INF] Executed action method OopS22Mvc76266.Web.Controllers.PremisesController.Index (oop-s2-2-mvc-76266), returned result Microsoft.AspNetCore.Mvc.ViewResult in 7.46ms.
+2026-03-30 09:56:46.884 +01:00 [INF] Executing ViewResult, running view Index.
+2026-03-30 09:56:46.890 +01:00 [INF] Executed ViewResult - view Index executed in 6.8312ms.
+2026-03-30 09:56:46.891 +01:00 [INF] Executed action OopS22Mvc76266.Web.Controllers.PremisesController.Index (oop-s2-2-mvc-76266) in 15.4647ms
+2026-03-30 09:56:46.891 +01:00 [INF] Executed endpoint 'OopS22Mvc76266.Web.Controllers.PremisesController.Index (oop-s2-2-mvc-76266)'
+2026-03-30 09:56:46.892 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5156/Premises - 200 null text/html; charset=utf-8 41.5991ms
+2026-03-30 09:56:51.669 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5156/Inspections - null null
+2026-03-30 09:56:51.675 +01:00 [INF] Executing endpoint 'OopS22Mvc76266.Web.Controllers.InspectionsController.Index (oop-s2-2-mvc-76266)'
+2026-03-30 09:56:51.689 +01:00 [INF] Route matched with {action = "Index", controller = "Inspections", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller OopS22Mvc76266.Web.Controllers.InspectionsController (oop-s2-2-mvc-76266).
+2026-03-30 09:56:51.691 +01:00 [INF] Executing action method OopS22Mvc76266.Web.Controllers.InspectionsController.Index (oop-s2-2-mvc-76266) - Validation state: "Valid"
+2026-03-30 09:56:51.732 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "i"."Id", "i"."InspectionDate", "i"."Notes", "i"."Outcome", "i"."PremisesId", "i"."Score", "p"."Id", "p"."Address", "p"."Name", "p"."RiskRating", "p"."Town"
+FROM "Inspections" AS "i"
+INNER JOIN "Premises" AS "p" ON "i"."PremisesId" = "p"."Id"
+ORDER BY "i"."InspectionDate" DESC
+2026-03-30 09:56:51.752 +01:00 [INF] Executed action method OopS22Mvc76266.Web.Controllers.InspectionsController.Index (oop-s2-2-mvc-76266), returned result Microsoft.AspNetCore.Mvc.ViewResult in 60.6699ms.
+2026-03-30 09:56:51.753 +01:00 [INF] Executing ViewResult, running view Index.
+2026-03-30 09:56:51.759 +01:00 [INF] Executed ViewResult - view Index executed in 6.6451ms.
+2026-03-30 09:56:51.759 +01:00 [INF] Executed action OopS22Mvc76266.Web.Controllers.InspectionsController.Index (oop-s2-2-mvc-76266) in 69.0355ms
+2026-03-30 09:56:51.759 +01:00 [INF] Executed endpoint 'OopS22Mvc76266.Web.Controllers.InspectionsController.Index (oop-s2-2-mvc-76266)'
+2026-03-30 09:56:51.759 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5156/Inspections - 200 null text/html; charset=utf-8 90.41ms
+2026-03-30 09:56:55.936 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5156/FollowUps - null null
+2026-03-30 09:56:55.945 +01:00 [INF] Executing endpoint 'OopS22Mvc76266.Web.Controllers.FollowUpsController.Index (oop-s2-2-mvc-76266)'
+2026-03-30 09:56:55.949 +01:00 [INF] Route matched with {action = "Index", controller = "FollowUps", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller OopS22Mvc76266.Web.Controllers.FollowUpsController (oop-s2-2-mvc-76266).
+2026-03-30 09:56:55.950 +01:00 [INF] Executing action method OopS22Mvc76266.Web.Controllers.FollowUpsController.Index (oop-s2-2-mvc-76266) - Validation state: "Valid"
+2026-03-30 09:56:55.994 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "f"."Id", "f"."ClosedDate", "f"."DueDate", "f"."InspectionId", "f"."Status", "i"."Id", "i"."InspectionDate", "i"."Notes", "i"."Outcome", "i"."PremisesId", "i"."Score", "p"."Id", "p"."Address", "p"."Name", "p"."RiskRating", "p"."Town"
+FROM "FollowUps" AS "f"
+INNER JOIN "Inspections" AS "i" ON "f"."InspectionId" = "i"."Id"
+INNER JOIN "Premises" AS "p" ON "i"."PremisesId" = "p"."Id"
+ORDER BY "f"."DueDate"
+2026-03-30 09:56:55.996 +01:00 [INF] Executed action method OopS22Mvc76266.Web.Controllers.FollowUpsController.Index (oop-s2-2-mvc-76266), returned result Microsoft.AspNetCore.Mvc.ViewResult in 45.7647ms.
+2026-03-30 09:56:55.997 +01:00 [INF] Executing ViewResult, running view Index.
+2026-03-30 09:56:56.003 +01:00 [INF] Executed ViewResult - view Index executed in 6.546ms.
+2026-03-30 09:56:56.003 +01:00 [INF] Executed action OopS22Mvc76266.Web.Controllers.FollowUpsController.Index (oop-s2-2-mvc-76266) in 54.0054ms
+2026-03-30 09:56:56.003 +01:00 [INF] Executed endpoint 'OopS22Mvc76266.Web.Controllers.FollowUpsController.Index (oop-s2-2-mvc-76266)'
+2026-03-30 09:56:56.003 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5156/FollowUps - 200 null text/html; charset=utf-8 67.507ms
+2026-03-30 09:56:59.250 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5156/FollowUps/Create - null null
+2026-03-30 09:56:59.253 +01:00 [INF] Executing endpoint 'OopS22Mvc76266.Web.Controllers.FollowUpsController.Create (oop-s2-2-mvc-76266)'
+2026-03-30 09:56:59.259 +01:00 [INF] Route matched with {action = "Create", controller = "FollowUps", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create() on controller OopS22Mvc76266.Web.Controllers.FollowUpsController (oop-s2-2-mvc-76266).
+2026-03-30 09:56:59.259 +01:00 [INF] Executing action method OopS22Mvc76266.Web.Controllers.FollowUpsController.Create (oop-s2-2-mvc-76266) - Validation state: "Valid"
+2026-03-30 09:56:59.290 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "i"."Id", "i"."InspectionDate", "i"."Notes", "i"."Outcome", "i"."PremisesId", "i"."Score", "p"."Id", "p"."Address", "p"."Name", "p"."RiskRating", "p"."Town"
+FROM "Inspections" AS "i"
+INNER JOIN "Premises" AS "p" ON "i"."PremisesId" = "p"."Id"
+ORDER BY "i"."InspectionDate" DESC
+2026-03-30 09:56:59.347 +01:00 [INF] Executed action method OopS22Mvc76266.Web.Controllers.FollowUpsController.Create (oop-s2-2-mvc-76266), returned result Microsoft.AspNetCore.Mvc.ViewResult in 87.7105ms.
+2026-03-30 09:56:59.348 +01:00 [INF] Executing ViewResult, running view Create.
+2026-03-30 09:56:59.377 +01:00 [INF] Executed ViewResult - view Create executed in 29.1582ms.
+2026-03-30 09:56:59.377 +01:00 [INF] Executed action OopS22Mvc76266.Web.Controllers.FollowUpsController.Create (oop-s2-2-mvc-76266) in 117.5646ms
+2026-03-30 09:56:59.377 +01:00 [INF] Executed endpoint 'OopS22Mvc76266.Web.Controllers.FollowUpsController.Create (oop-s2-2-mvc-76266)'
+2026-03-30 09:56:59.377 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5156/FollowUps/Create - 200 null text/html; charset=utf-8 127.1281ms
+2026-03-30 09:57:09.230 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5156/ - null null
+2026-03-30 09:57:09.231 +01:00 [INF] Executing endpoint 'OopS22Mvc76266.Web.Controllers.HomeController.Index (oop-s2-2-mvc-76266)'
+2026-03-30 09:57:09.232 +01:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller OopS22Mvc76266.Web.Controllers.HomeController (oop-s2-2-mvc-76266).
+2026-03-30 09:57:09.232 +01:00 [INF] Executing action method OopS22Mvc76266.Web.Controllers.HomeController.Index (oop-s2-2-mvc-76266) - Validation state: "Valid"
+2026-03-30 09:57:09.232 +01:00 [INF] Executed action method OopS22Mvc76266.Web.Controllers.HomeController.Index (oop-s2-2-mvc-76266), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0105ms.
+2026-03-30 09:57:09.232 +01:00 [INF] Executing ViewResult, running view Index.
+2026-03-30 09:57:09.233 +01:00 [INF] Executed ViewResult - view Index executed in 1.1642ms.
+2026-03-30 09:57:09.234 +01:00 [INF] Executed action OopS22Mvc76266.Web.Controllers.HomeController.Index (oop-s2-2-mvc-76266) in 1.8844ms
+2026-03-30 09:57:09.234 +01:00 [INF] Executed endpoint 'OopS22Mvc76266.Web.Controllers.HomeController.Index (oop-s2-2-mvc-76266)'
+2026-03-30 09:57:09.234 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5156/ - 200 null text/html; charset=utf-8 4.5192ms
+2026-03-30 10:03:49.153 +01:00 [INF] Application is shutting down...
+2026-03-30 15:47:54.184 +01:00 [INF] User profile is available. Using '/Users/mozanielclementinodossantos/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2026-03-30 15:47:54.765 +01:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2026-03-30 15:47:54.780 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2026-03-30 15:47:54.788 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2026-03-30 15:47:54.802 +01:00 [INF] No migrations were applied. The database is already up to date.
+2026-03-30 15:47:54.807 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2026-03-30 15:47:54.808 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2026-03-30 15:47:54.808 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2026-03-30 15:47:54.808 +01:00 [INF] No migrations were applied. The database is already up to date.
+2026-03-30 15:47:54.927 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Premises" AS "p")
+2026-03-30 15:47:54.979 +01:00 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedName_0='?' (Size = 5)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."ConcurrencyStamp", "a"."Name", "a"."NormalizedName"
+FROM "AspNetRoles" AS "a"
+WHERE "a"."NormalizedName" = @__normalizedName_0
+LIMIT 1
+2026-03-30 15:47:55.012 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedName_0='?' (Size = 9)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."ConcurrencyStamp", "a"."Name", "a"."NormalizedName"
+FROM "AspNetRoles" AS "a"
+WHERE "a"."NormalizedName" = @__normalizedName_0
+LIMIT 1
+2026-03-30 15:47:55.014 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedName_0='?' (Size = 6)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."ConcurrencyStamp", "a"."Name", "a"."NormalizedName"
+FROM "AspNetRoles" AS "a"
+WHERE "a"."NormalizedName" = @__normalizedName_0
+LIMIT 1
+2026-03-30 15:47:55.020 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedEmail_0='?' (Size = 14)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2026-03-30 15:47:55.045 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedRoleName_0='?' (Size = 5)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."ConcurrencyStamp", "a"."Name", "a"."NormalizedName"
+FROM "AspNetRoles" AS "a"
+WHERE "a"."NormalizedName" = @__normalizedRoleName_0
+LIMIT 2
+2026-03-30 15:47:55.064 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (Size = 36), @__p_1='?' (Size = 36)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."UserId", "a"."RoleId"
+FROM "AspNetUserRoles" AS "a"
+WHERE "a"."UserId" = @__p_0 AND "a"."RoleId" = @__p_1
+LIMIT 1
+2026-03-30 15:47:55.329 +01:00 [INF] Now listening on: http://localhost:5156
+2026-03-30 15:47:55.330 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-30 15:47:55.330 +01:00 [INF] Hosting environment: Development
+2026-03-30 15:47:55.330 +01:00 [INF] Content root path: /Users/mozanielclementinodossantos/Documents/oop-s2-2-mvc-76266/oop-s2-2-mvc-76266
+2026-03-30 15:48:13.483 +01:00 [INF] Application is shutting down...
+2026-03-30 15:48:17.711 +01:00 [INF] User profile is available. Using '/Users/mozanielclementinodossantos/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2026-03-30 15:48:18.225 +01:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2026-03-30 15:48:18.233 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2026-03-30 15:48:18.240 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2026-03-30 15:48:18.256 +01:00 [INF] No migrations were applied. The database is already up to date.
+2026-03-30 15:48:18.260 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2026-03-30 15:48:18.260 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2026-03-30 15:48:18.261 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2026-03-30 15:48:18.261 +01:00 [INF] No migrations were applied. The database is already up to date.
+2026-03-30 15:48:18.361 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Premises" AS "p")
+2026-03-30 15:48:18.413 +01:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedName_0='?' (Size = 5)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."ConcurrencyStamp", "a"."Name", "a"."NormalizedName"
+FROM "AspNetRoles" AS "a"
+WHERE "a"."NormalizedName" = @__normalizedName_0
+LIMIT 1
+2026-03-30 15:48:18.443 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedName_0='?' (Size = 9)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."ConcurrencyStamp", "a"."Name", "a"."NormalizedName"
+FROM "AspNetRoles" AS "a"
+WHERE "a"."NormalizedName" = @__normalizedName_0
+LIMIT 1
+2026-03-30 15:48:18.444 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedName_0='?' (Size = 6)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."ConcurrencyStamp", "a"."Name", "a"."NormalizedName"
+FROM "AspNetRoles" AS "a"
+WHERE "a"."NormalizedName" = @__normalizedName_0
+LIMIT 1
+2026-03-30 15:48:18.449 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedEmail_0='?' (Size = 14)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2026-03-30 15:48:18.471 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedRoleName_0='?' (Size = 5)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."ConcurrencyStamp", "a"."Name", "a"."NormalizedName"
+FROM "AspNetRoles" AS "a"
+WHERE "a"."NormalizedName" = @__normalizedRoleName_0
+LIMIT 2
+2026-03-30 15:48:18.483 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (Size = 36), @__p_1='?' (Size = 36)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."UserId", "a"."RoleId"
+FROM "AspNetUserRoles" AS "a"
+WHERE "a"."UserId" = @__p_0 AND "a"."RoleId" = @__p_1
+LIMIT 1
+2026-03-30 15:48:18.597 +01:00 [INF] Now listening on: http://localhost:5156
+2026-03-30 15:48:18.598 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-30 15:48:18.598 +01:00 [INF] Hosting environment: Development
+2026-03-30 15:48:18.599 +01:00 [INF] Content root path: /Users/mozanielclementinodossantos/Documents/oop-s2-2-mvc-76266/oop-s2-2-mvc-76266
+2026-03-30 15:48:45.911 +01:00 [INF] Application is shutting down...
+2026-03-30 15:48:51.756 +01:00 [INF] User profile is available. Using '/Users/mozanielclementinodossantos/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2026-03-30 15:48:52.396 +01:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2026-03-30 15:48:52.404 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2026-03-30 15:48:52.410 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2026-03-30 15:48:52.423 +01:00 [INF] No migrations were applied. The database is already up to date.
+2026-03-30 15:48:52.426 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2026-03-30 15:48:52.427 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2026-03-30 15:48:52.427 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2026-03-30 15:48:52.427 +01:00 [INF] No migrations were applied. The database is already up to date.
+2026-03-30 15:48:52.536 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Premises" AS "p")
+2026-03-30 15:48:52.588 +01:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedName_0='?' (Size = 5)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."ConcurrencyStamp", "a"."Name", "a"."NormalizedName"
+FROM "AspNetRoles" AS "a"
+WHERE "a"."NormalizedName" = @__normalizedName_0
+LIMIT 1
+2026-03-30 15:48:52.616 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedName_0='?' (Size = 9)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."ConcurrencyStamp", "a"."Name", "a"."NormalizedName"
+FROM "AspNetRoles" AS "a"
+WHERE "a"."NormalizedName" = @__normalizedName_0
+LIMIT 1
+2026-03-30 15:48:52.616 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedName_0='?' (Size = 6)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."ConcurrencyStamp", "a"."Name", "a"."NormalizedName"
+FROM "AspNetRoles" AS "a"
+WHERE "a"."NormalizedName" = @__normalizedName_0
+LIMIT 1
+2026-03-30 15:48:52.623 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedEmail_0='?' (Size = 14)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2026-03-30 15:48:52.669 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedRoleName_0='?' (Size = 5)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."ConcurrencyStamp", "a"."Name", "a"."NormalizedName"
+FROM "AspNetRoles" AS "a"
+WHERE "a"."NormalizedName" = @__normalizedRoleName_0
+LIMIT 2
+2026-03-30 15:48:52.681 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (Size = 36), @__p_1='?' (Size = 36)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."UserId", "a"."RoleId"
+FROM "AspNetUserRoles" AS "a"
+WHERE "a"."UserId" = @__p_0 AND "a"."RoleId" = @__p_1
+LIMIT 1
+2026-03-30 15:48:52.784 +01:00 [INF] Now listening on: http://localhost:5156
+2026-03-30 15:48:52.784 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-30 15:48:52.785 +01:00 [INF] Hosting environment: Development
+2026-03-30 15:48:52.785 +01:00 [INF] Content root path: /Users/mozanielclementinodossantos/Documents/oop-s2-2-mvc-76266/oop-s2-2-mvc-76266
+2026-03-30 15:49:51.411 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5156/ - null null
+2026-03-30 15:49:51.428 +01:00 [WRN] Failed to determine the https port for redirect.
+2026-03-30 15:49:51.541 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (Size = 36)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."Id" = @__p_0
+LIMIT 1
+2026-03-30 15:49:51.580 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__user_Id_0='?' (Size = 36)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."ClaimType", "a"."ClaimValue", "a"."UserId"
+FROM "AspNetUserClaims" AS "a"
+WHERE "a"."UserId" = @__user_Id_0
+2026-03-30 15:49:51.600 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__userId_0='?' (Size = 36)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a0"."Name"
+FROM "AspNetUserRoles" AS "a"
+INNER JOIN "AspNetRoles" AS "a0" ON "a"."RoleId" = "a0"."Id"
+WHERE "a"."UserId" = @__userId_0
+2026-03-30 15:49:51.601 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedName_0='?' (Size = 5)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."ConcurrencyStamp", "a"."Name", "a"."NormalizedName"
+FROM "AspNetRoles" AS "a"
+WHERE "a"."NormalizedName" = @__normalizedName_0
+LIMIT 1
+2026-03-30 15:49:51.606 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__role_Id_0='?' (Size = 36)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."ClaimType", "a"."ClaimValue"
+FROM "AspNetRoleClaims" AS "a"
+WHERE "a"."RoleId" = @__role_Id_0
+2026-03-30 15:49:51.610 +01:00 [INF] Executing endpoint 'OopS22Mvc76266.Web.Controllers.HomeController.Index (oop-s2-2-mvc-76266)'
+2026-03-30 15:49:51.620 +01:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller OopS22Mvc76266.Web.Controllers.HomeController (oop-s2-2-mvc-76266).
+2026-03-30 15:49:51.625 +01:00 [INF] Executing action method OopS22Mvc76266.Web.Controllers.HomeController.Index (oop-s2-2-mvc-76266) - Validation state: "Valid"
+2026-03-30 15:49:51.628 +01:00 [INF] Executed action method OopS22Mvc76266.Web.Controllers.HomeController.Index (oop-s2-2-mvc-76266), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.2951ms.
+2026-03-30 15:49:51.640 +01:00 [INF] Executing ViewResult, running view Index.
+2026-03-30 15:49:51.753 +01:00 [INF] Executed ViewResult - view Index executed in 117.9529ms.
+2026-03-30 15:49:51.753 +01:00 [INF] Executed action OopS22Mvc76266.Web.Controllers.HomeController.Index (oop-s2-2-mvc-76266) in 132.5098ms
+2026-03-30 15:49:51.753 +01:00 [INF] Executed endpoint 'OopS22Mvc76266.Web.Controllers.HomeController.Index (oop-s2-2-mvc-76266)'
+2026-03-30 15:49:51.766 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5156/ - 200 null text/html; charset=utf-8 361.4449ms
+2026-03-30 15:49:56.593 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5156/Identity/Account/Logout?returnUrl=%2F - application/x-www-form-urlencoded 225
+2026-03-30 15:49:56.604 +01:00 [INF] Executing endpoint '/Account/Logout'
+2026-03-30 15:49:56.632 +01:00 [INF] Route matched with {page = "/Account/Logout", area = "Identity", action = "", controller = ""}. Executing page /Account/Logout
+2026-03-30 15:49:56.663 +01:00 [INF] Executing handler method Microsoft.AspNetCore.Identity.UI.V5.Pages.Account.Internal.LogoutModel.OnPost - ModelState is "Valid"
+2026-03-30 15:49:56.666 +01:00 [INF] AuthenticationScheme: Identity.Application signed out.
+2026-03-30 15:49:56.667 +01:00 [INF] AuthenticationScheme: Identity.External signed out.
+2026-03-30 15:49:56.668 +01:00 [INF] AuthenticationScheme: Identity.TwoFactorUserId signed out.
+2026-03-30 15:49:56.668 +01:00 [INF] User logged out.
+2026-03-30 15:49:56.668 +01:00 [INF] Executed handler method OnPost, returned result Microsoft.AspNetCore.Mvc.LocalRedirectResult.
+2026-03-30 15:49:56.670 +01:00 [INF] Executing LocalRedirectResult, redirecting to /.
+2026-03-30 15:49:56.670 +01:00 [INF] Executed page /Account/Logout in 38.0875ms
+2026-03-30 15:49:56.670 +01:00 [INF] Executed endpoint '/Account/Logout'
+2026-03-30 15:49:56.670 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5156/Identity/Account/Logout?returnUrl=%2F - 302 0 null 78.49ms
+2026-03-30 15:49:56.677 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5156/ - null null
+2026-03-30 15:49:56.678 +01:00 [INF] Executing endpoint 'OopS22Mvc76266.Web.Controllers.HomeController.Index (oop-s2-2-mvc-76266)'
+2026-03-30 15:49:56.679 +01:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller OopS22Mvc76266.Web.Controllers.HomeController (oop-s2-2-mvc-76266).
+2026-03-30 15:49:56.680 +01:00 [INF] Executing action method OopS22Mvc76266.Web.Controllers.HomeController.Index (oop-s2-2-mvc-76266) - Validation state: "Valid"
+2026-03-30 15:49:56.681 +01:00 [INF] Executed action method OopS22Mvc76266.Web.Controllers.HomeController.Index (oop-s2-2-mvc-76266), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.3694ms.
+2026-03-30 15:49:56.683 +01:00 [INF] Executing ViewResult, running view Index.
+2026-03-30 15:49:56.698 +01:00 [INF] Executed ViewResult - view Index executed in 15.7347ms.
+2026-03-30 15:49:56.698 +01:00 [INF] Executed action OopS22Mvc76266.Web.Controllers.HomeController.Index (oop-s2-2-mvc-76266) in 18.4667ms
+2026-03-30 15:49:56.698 +01:00 [INF] Executed endpoint 'OopS22Mvc76266.Web.Controllers.HomeController.Index (oop-s2-2-mvc-76266)'
+2026-03-30 15:49:56.699 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5156/ - 200 null text/html; charset=utf-8 22.1209ms
+2026-03-30 15:50:07.028 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5156/Identity/Account/Login - null null
+2026-03-30 15:50:07.053 +01:00 [INF] Executing endpoint '/Account/Login'
+2026-03-30 15:50:07.132 +01:00 [INF] Route matched with {page = "/Account/Login", area = "Identity", action = "", controller = ""}. Executing page /Account/Login
+2026-03-30 15:50:07.135 +01:00 [INF] Executing handler method Microsoft.AspNetCore.Identity.UI.V5.Pages.Account.Internal.LoginModel.OnGetAsync - ModelState is "Valid"
+2026-03-30 15:50:07.137 +01:00 [INF] AuthenticationScheme: Identity.External signed out.
+2026-03-30 15:50:07.138 +01:00 [INF] Executed handler method OnGetAsync, returned result .
+2026-03-30 15:50:07.142 +01:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2026-03-30 15:50:07.143 +01:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2026-03-30 15:50:07.186 +01:00 [INF] Executed page /Account/Login in 53.6478ms
+2026-03-30 15:50:07.186 +01:00 [INF] Executed endpoint '/Account/Login'
+2026-03-30 15:50:07.186 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5156/Identity/Account/Login - 200 null text/html; charset=utf-8 158.2651ms
+2026-03-30 15:50:23.014 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5156/Identity/Account/Login - application/x-www-form-urlencoded 261
+2026-03-30 15:50:23.022 +01:00 [INF] Executing endpoint '/Account/Login'
+2026-03-30 15:50:23.026 +01:00 [INF] Route matched with {page = "/Account/Login", area = "Identity", action = "", controller = ""}. Executing page /Account/Login
+2026-03-30 15:50:23.068 +01:00 [INF] Executing handler method Microsoft.AspNetCore.Identity.UI.V5.Pages.Account.Internal.LoginModel.OnPostAsync - ModelState is "Valid"
+2026-03-30 15:50:23.123 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedUserName_0='?' (Size = 14)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2026-03-30 15:50:23.178 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__user_Id_0='?' (Size = 36)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."ClaimType", "a"."ClaimValue", "a"."UserId"
+FROM "AspNetUserClaims" AS "a"
+WHERE "a"."UserId" = @__user_Id_0
+2026-03-30 15:50:23.181 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__userId_0='?' (Size = 36)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a0"."Name"
+FROM "AspNetUserRoles" AS "a"
+INNER JOIN "AspNetRoles" AS "a0" ON "a"."RoleId" = "a0"."Id"
+WHERE "a"."UserId" = @__userId_0
+2026-03-30 15:50:23.182 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedName_0='?' (Size = 5)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."ConcurrencyStamp", "a"."Name", "a"."NormalizedName"
+FROM "AspNetRoles" AS "a"
+WHERE "a"."NormalizedName" = @__normalizedName_0
+LIMIT 1
+2026-03-30 15:50:23.184 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__role_Id_0='?' (Size = 36)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."ClaimType", "a"."ClaimValue"
+FROM "AspNetRoleClaims" AS "a"
+WHERE "a"."RoleId" = @__role_Id_0
+2026-03-30 15:50:23.185 +01:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2026-03-30 15:50:23.185 +01:00 [INF] User logged in.
+2026-03-30 15:50:23.186 +01:00 [INF] Executed handler method OnPostAsync, returned result Microsoft.AspNetCore.Mvc.LocalRedirectResult.
+2026-03-30 15:50:23.186 +01:00 [INF] Executing LocalRedirectResult, redirecting to /.
+2026-03-30 15:50:23.186 +01:00 [INF] Executed page /Account/Login in 159.2716ms
+2026-03-30 15:50:23.186 +01:00 [INF] Executed endpoint '/Account/Login'
+2026-03-30 15:50:23.186 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5156/Identity/Account/Login - 302 0 null 172.1909ms
+2026-03-30 15:50:23.192 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5156/ - null null
+2026-03-30 15:50:23.194 +01:00 [INF] Executing endpoint 'OopS22Mvc76266.Web.Controllers.HomeController.Index (oop-s2-2-mvc-76266)'
+2026-03-30 15:50:23.194 +01:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller OopS22Mvc76266.Web.Controllers.HomeController (oop-s2-2-mvc-76266).
+2026-03-30 15:50:23.195 +01:00 [INF] Executing action method OopS22Mvc76266.Web.Controllers.HomeController.Index (oop-s2-2-mvc-76266) - Validation state: "Valid"
+2026-03-30 15:50:23.195 +01:00 [INF] Executed action method OopS22Mvc76266.Web.Controllers.HomeController.Index (oop-s2-2-mvc-76266), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0203ms.
+2026-03-30 15:50:23.195 +01:00 [INF] Executing ViewResult, running view Index.
+2026-03-30 15:50:23.197 +01:00 [INF] Executed ViewResult - view Index executed in 1.8692ms.
+2026-03-30 15:50:23.197 +01:00 [INF] Executed action OopS22Mvc76266.Web.Controllers.HomeController.Index (oop-s2-2-mvc-76266) in 2.3986ms
+2026-03-30 15:50:23.197 +01:00 [INF] Executed endpoint 'OopS22Mvc76266.Web.Controllers.HomeController.Index (oop-s2-2-mvc-76266)'
+2026-03-30 15:50:23.197 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5156/ - 200 null text/html; charset=utf-8 5.389ms
+2026-03-30 15:51:37.612 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5156/Identity/Account/Logout?returnUrl=%2F - application/x-www-form-urlencoded 225
+2026-03-30 15:51:37.626 +01:00 [INF] Executing endpoint '/Account/Logout'
+2026-03-30 15:51:37.627 +01:00 [INF] Route matched with {page = "/Account/Logout", area = "Identity", action = "", controller = ""}. Executing page /Account/Logout
+2026-03-30 15:51:37.631 +01:00 [INF] Executing handler method Microsoft.AspNetCore.Identity.UI.V5.Pages.Account.Internal.LogoutModel.OnPost - ModelState is "Valid"
+2026-03-30 15:51:37.632 +01:00 [INF] AuthenticationScheme: Identity.Application signed out.
+2026-03-30 15:51:37.632 +01:00 [INF] AuthenticationScheme: Identity.External signed out.
+2026-03-30 15:51:37.632 +01:00 [INF] AuthenticationScheme: Identity.TwoFactorUserId signed out.
+2026-03-30 15:51:37.633 +01:00 [INF] User logged out.
+2026-03-30 15:51:37.633 +01:00 [INF] Executed handler method OnPost, returned result Microsoft.AspNetCore.Mvc.LocalRedirectResult.
+2026-03-30 15:51:37.634 +01:00 [INF] Executing LocalRedirectResult, redirecting to /.
+2026-03-30 15:51:37.634 +01:00 [INF] Executed page /Account/Logout in 6.3872ms
+2026-03-30 15:51:37.634 +01:00 [INF] Executed endpoint '/Account/Logout'
+2026-03-30 15:51:37.635 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5156/Identity/Account/Logout?returnUrl=%2F - 302 0 null 23.7385ms
+2026-03-30 15:51:37.660 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5156/ - null null
+2026-03-30 15:51:37.662 +01:00 [INF] Executing endpoint 'OopS22Mvc76266.Web.Controllers.HomeController.Index (oop-s2-2-mvc-76266)'
+2026-03-30 15:51:37.662 +01:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller OopS22Mvc76266.Web.Controllers.HomeController (oop-s2-2-mvc-76266).
+2026-03-30 15:51:37.663 +01:00 [INF] Executing action method OopS22Mvc76266.Web.Controllers.HomeController.Index (oop-s2-2-mvc-76266) - Validation state: "Valid"
+2026-03-30 15:51:37.663 +01:00 [INF] Executed action method OopS22Mvc76266.Web.Controllers.HomeController.Index (oop-s2-2-mvc-76266), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0607ms.
+2026-03-30 15:51:37.664 +01:00 [INF] Executing ViewResult, running view Index.
+2026-03-30 15:51:37.673 +01:00 [INF] Executed ViewResult - view Index executed in 9.3659ms.
+2026-03-30 15:51:37.674 +01:00 [INF] Executed action OopS22Mvc76266.Web.Controllers.HomeController.Index (oop-s2-2-mvc-76266) in 10.9591ms
+2026-03-30 15:51:37.674 +01:00 [INF] Executed endpoint 'OopS22Mvc76266.Web.Controllers.HomeController.Index (oop-s2-2-mvc-76266)'
+2026-03-30 15:51:37.674 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5156/ - 200 null text/html; charset=utf-8 13.982ms
+2026-03-30 15:51:41.062 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5156/Identity/Account/Login - null null
+2026-03-30 15:51:41.064 +01:00 [INF] Executing endpoint '/Account/Login'
+2026-03-30 15:51:41.065 +01:00 [INF] Route matched with {page = "/Account/Login", area = "Identity", action = "", controller = ""}. Executing page /Account/Login
+2026-03-30 15:51:41.072 +01:00 [INF] Executing handler method Microsoft.AspNetCore.Identity.UI.V5.Pages.Account.Internal.LoginModel.OnGetAsync - ModelState is "Valid"
+2026-03-30 15:51:41.072 +01:00 [INF] AuthenticationScheme: Identity.External signed out.
+2026-03-30 15:51:41.073 +01:00 [INF] Executed handler method OnGetAsync, returned result .
+2026-03-30 15:51:41.073 +01:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2026-03-30 15:51:41.073 +01:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2026-03-30 15:51:41.081 +01:00 [INF] Executed page /Account/Login in 15.6372ms
+2026-03-30 15:51:41.081 +01:00 [INF] Executed endpoint '/Account/Login'
+2026-03-30 15:51:41.082 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5156/Identity/Account/Login - 200 null text/html; charset=utf-8 19.1525ms
+2026-03-30 19:03:49.541 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5156/ - null null
+2026-03-30 19:03:49.625 +01:00 [INF] Executing endpoint 'OopS22Mvc76266.Web.Controllers.HomeController.Index (oop-s2-2-mvc-76266)'
+2026-03-30 19:03:49.641 +01:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller OopS22Mvc76266.Web.Controllers.HomeController (oop-s2-2-mvc-76266).
+2026-03-30 19:03:49.659 +01:00 [INF] Executing action method OopS22Mvc76266.Web.Controllers.HomeController.Index (oop-s2-2-mvc-76266) - Validation state: "Valid"
+2026-03-30 19:03:49.673 +01:00 [INF] Executed action method OopS22Mvc76266.Web.Controllers.HomeController.Index (oop-s2-2-mvc-76266), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.8357ms.
+2026-03-30 19:03:49.760 +01:00 [INF] Executing ViewResult, running view Index.
+2026-03-30 19:03:51.804 +01:00 [INF] Executed ViewResult - view Index executed in 2120.2265ms.
+2026-03-30 19:03:51.806 +01:00 [INF] Executed action OopS22Mvc76266.Web.Controllers.HomeController.Index (oop-s2-2-mvc-76266) in 2163.9266ms
+2026-03-30 19:03:51.806 +01:00 [INF] Executed endpoint 'OopS22Mvc76266.Web.Controllers.HomeController.Index (oop-s2-2-mvc-76266)'
+2026-03-30 19:03:51.809 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5156/ - 200 null text/html; charset=utf-8 2274.9077ms
+2026-03-30 19:03:51.816 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5156/css/site.css?v=ICAgPqaCDQtMHNMTwr9WpF3QnIVp-vC_HnVioHHNJY0 - null null
+2026-03-30 19:03:51.919 +01:00 [INF] The file /css/site.css was not modified
+2026-03-30 19:03:51.921 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5156/css/site.css?v=ICAgPqaCDQtMHNMTwr9WpF3QnIVp-vC_HnVioHHNJY0 - 304 null text/css 105.5216ms
+2026-03-30 19:03:55.845 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5156/Identity/Account/Login - null null
+2026-03-30 19:03:55.854 +01:00 [INF] Executing endpoint '/Account/Login'
+2026-03-30 19:03:55.860 +01:00 [INF] Route matched with {page = "/Account/Login", area = "Identity", action = "", controller = ""}. Executing page /Account/Login
+2026-03-30 19:03:55.898 +01:00 [INF] Executing handler method Microsoft.AspNetCore.Identity.UI.V5.Pages.Account.Internal.LoginModel.OnGetAsync - ModelState is "Valid"
+2026-03-30 19:03:55.900 +01:00 [INF] AuthenticationScheme: Identity.External signed out.
+2026-03-30 19:03:55.904 +01:00 [INF] Executed handler method OnGetAsync, returned result .
+2026-03-30 19:03:55.906 +01:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2026-03-30 19:03:55.908 +01:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2026-03-30 19:03:55.979 +01:00 [INF] Executed page /Account/Login in 118.422ms
+2026-03-30 19:03:55.979 +01:00 [INF] Executed endpoint '/Account/Login'
+2026-03-30 19:03:55.979 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5156/Identity/Account/Login - 200 null text/html; charset=utf-8 133.9984ms
+2026-03-30 19:04:12.435 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5156/Identity/Account/Login - application/x-www-form-urlencoded 261
+2026-03-30 19:04:12.442 +01:00 [INF] Executing endpoint '/Account/Login'
+2026-03-30 19:04:12.443 +01:00 [INF] Route matched with {page = "/Account/Login", area = "Identity", action = "", controller = ""}. Executing page /Account/Login
+2026-03-30 19:04:12.454 +01:00 [INF] Executing handler method Microsoft.AspNetCore.Identity.UI.V5.Pages.Account.Internal.LoginModel.OnPostAsync - ModelState is "Valid"
+2026-03-30 19:04:14.160 +01:00 [INF] Executed DbCommand (7ms) [Parameters=[@__normalizedUserName_0='?' (Size = 14)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2026-03-30 19:04:14.250 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__user_Id_0='?' (Size = 36)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."ClaimType", "a"."ClaimValue", "a"."UserId"
+FROM "AspNetUserClaims" AS "a"
+WHERE "a"."UserId" = @__user_Id_0
+2026-03-30 19:04:14.254 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__userId_0='?' (Size = 36)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a0"."Name"
+FROM "AspNetUserRoles" AS "a"
+INNER JOIN "AspNetRoles" AS "a0" ON "a"."RoleId" = "a0"."Id"
+WHERE "a"."UserId" = @__userId_0
+2026-03-30 19:04:14.255 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedName_0='?' (Size = 5)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."ConcurrencyStamp", "a"."Name", "a"."NormalizedName"
+FROM "AspNetRoles" AS "a"
+WHERE "a"."NormalizedName" = @__normalizedName_0
+LIMIT 1
+2026-03-30 19:04:14.257 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__role_Id_0='?' (Size = 36)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."ClaimType", "a"."ClaimValue"
+FROM "AspNetRoleClaims" AS "a"
+WHERE "a"."RoleId" = @__role_Id_0
+2026-03-30 19:04:14.261 +01:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2026-03-30 19:04:14.261 +01:00 [INF] User logged in.
+2026-03-30 19:04:14.261 +01:00 [INF] Executed handler method OnPostAsync, returned result Microsoft.AspNetCore.Mvc.LocalRedirectResult.
+2026-03-30 19:04:14.262 +01:00 [INF] Executing LocalRedirectResult, redirecting to /.
+2026-03-30 19:04:14.263 +01:00 [INF] Executed page /Account/Login in 1819.9182ms
+2026-03-30 19:04:14.263 +01:00 [INF] Executed endpoint '/Account/Login'
+2026-03-30 19:04:14.263 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5156/Identity/Account/Login - 302 0 null 1828.8439ms
+2026-03-30 19:04:14.275 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5156/ - null null
+2026-03-30 19:04:14.279 +01:00 [INF] Executing endpoint 'OopS22Mvc76266.Web.Controllers.HomeController.Index (oop-s2-2-mvc-76266)'
+2026-03-30 19:04:14.280 +01:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller OopS22Mvc76266.Web.Controllers.HomeController (oop-s2-2-mvc-76266).
+2026-03-30 19:04:14.283 +01:00 [INF] Executing action method OopS22Mvc76266.Web.Controllers.HomeController.Index (oop-s2-2-mvc-76266) - Validation state: "Valid"
+2026-03-30 19:04:14.283 +01:00 [INF] Executed action method OopS22Mvc76266.Web.Controllers.HomeController.Index (oop-s2-2-mvc-76266), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0282ms.
+2026-03-30 19:04:14.284 +01:00 [INF] Executing ViewResult, running view Index.
+2026-03-30 19:04:14.290 +01:00 [INF] Executed ViewResult - view Index executed in 6.1995ms.
+2026-03-30 19:04:14.290 +01:00 [INF] Executed action OopS22Mvc76266.Web.Controllers.HomeController.Index (oop-s2-2-mvc-76266) in 9.8062ms
+2026-03-30 19:04:14.290 +01:00 [INF] Executed endpoint 'OopS22Mvc76266.Web.Controllers.HomeController.Index (oop-s2-2-mvc-76266)'
+2026-03-30 19:04:14.290 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5156/ - 200 null text/html; charset=utf-8 14.8063ms
+2026-03-30 19:04:17.719 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5156/Premises - null null
+2026-03-30 19:04:17.773 +01:00 [INF] Executing endpoint 'OopS22Mvc76266.Web.Controllers.PremisesController.Index (oop-s2-2-mvc-76266)'
+2026-03-30 19:04:17.788 +01:00 [INF] Route matched with {action = "Index", controller = "Premises", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller OopS22Mvc76266.Web.Controllers.PremisesController (oop-s2-2-mvc-76266).
+2026-03-30 19:04:17.789 +01:00 [INF] Executing action method OopS22Mvc76266.Web.Controllers.PremisesController.Index (oop-s2-2-mvc-76266) - Validation state: "Valid"
+2026-03-30 19:04:17.828 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Address", "p"."Name", "p"."RiskRating", "p"."Town"
+FROM "Premises" AS "p"
+ORDER BY "p"."Name"
+2026-03-30 19:04:17.835 +01:00 [INF] Executed action method OopS22Mvc76266.Web.Controllers.PremisesController.Index (oop-s2-2-mvc-76266), returned result Microsoft.AspNetCore.Mvc.ViewResult in 46.301ms.
+2026-03-30 19:04:17.837 +01:00 [INF] Executing ViewResult, running view Index.
+2026-03-30 19:04:17.846 +01:00 [INF] Executed ViewResult - view Index executed in 10.7817ms.
+2026-03-30 19:04:17.847 +01:00 [INF] Executed action OopS22Mvc76266.Web.Controllers.PremisesController.Index (oop-s2-2-mvc-76266) in 58.7274ms
+2026-03-30 19:04:17.847 +01:00 [INF] Executed endpoint 'OopS22Mvc76266.Web.Controllers.PremisesController.Index (oop-s2-2-mvc-76266)'
+2026-03-30 19:04:17.847 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5156/Premises - 200 null text/html; charset=utf-8 128.499ms
+2026-03-30 19:04:22.843 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5156/Inspections - null null
+2026-03-30 19:04:22.866 +01:00 [INF] Executing endpoint 'OopS22Mvc76266.Web.Controllers.InspectionsController.Index (oop-s2-2-mvc-76266)'
+2026-03-30 19:04:22.873 +01:00 [INF] Route matched with {action = "Index", controller = "Inspections", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller OopS22Mvc76266.Web.Controllers.InspectionsController (oop-s2-2-mvc-76266).
+2026-03-30 19:04:22.874 +01:00 [INF] Executing action method OopS22Mvc76266.Web.Controllers.InspectionsController.Index (oop-s2-2-mvc-76266) - Validation state: "Valid"
+2026-03-30 19:04:22.999 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "i"."Id", "i"."InspectionDate", "i"."Notes", "i"."Outcome", "i"."PremisesId", "i"."Score", "p"."Id", "p"."Address", "p"."Name", "p"."RiskRating", "p"."Town"
+FROM "Inspections" AS "i"
+INNER JOIN "Premises" AS "p" ON "i"."PremisesId" = "p"."Id"
+ORDER BY "i"."InspectionDate" DESC
+2026-03-30 19:04:23.102 +01:00 [INF] Executed action method OopS22Mvc76266.Web.Controllers.InspectionsController.Index (oop-s2-2-mvc-76266), returned result Microsoft.AspNetCore.Mvc.ViewResult in 227.7915ms.
+2026-03-30 19:04:23.103 +01:00 [INF] Executing ViewResult, running view Index.
+2026-03-30 19:04:23.121 +01:00 [INF] Executed ViewResult - view Index executed in 18.9011ms.
+2026-03-30 19:04:23.125 +01:00 [INF] Executed action OopS22Mvc76266.Web.Controllers.InspectionsController.Index (oop-s2-2-mvc-76266) in 251.1002ms
+2026-03-30 19:04:23.125 +01:00 [INF] Executed endpoint 'OopS22Mvc76266.Web.Controllers.InspectionsController.Index (oop-s2-2-mvc-76266)'
+2026-03-30 19:04:23.126 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5156/Inspections - 200 null text/html; charset=utf-8 282.9522ms
+2026-03-30 19:04:26.424 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5156/FollowUps - null null
+2026-03-30 19:04:26.434 +01:00 [INF] Executing endpoint 'OopS22Mvc76266.Web.Controllers.FollowUpsController.Index (oop-s2-2-mvc-76266)'
+2026-03-30 19:04:26.442 +01:00 [INF] Route matched with {action = "Index", controller = "FollowUps", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller OopS22Mvc76266.Web.Controllers.FollowUpsController (oop-s2-2-mvc-76266).
+2026-03-30 19:04:26.442 +01:00 [INF] Executing action method OopS22Mvc76266.Web.Controllers.FollowUpsController.Index (oop-s2-2-mvc-76266) - Validation state: "Valid"
+2026-03-30 19:04:26.466 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "f"."Id", "f"."ClosedDate", "f"."DueDate", "f"."InspectionId", "f"."Status", "i"."Id", "i"."InspectionDate", "i"."Notes", "i"."Outcome", "i"."PremisesId", "i"."Score", "p"."Id", "p"."Address", "p"."Name", "p"."RiskRating", "p"."Town"
+FROM "FollowUps" AS "f"
+INNER JOIN "Inspections" AS "i" ON "f"."InspectionId" = "i"."Id"
+INNER JOIN "Premises" AS "p" ON "i"."PremisesId" = "p"."Id"
+ORDER BY "f"."DueDate"
+2026-03-30 19:04:26.481 +01:00 [INF] Executed action method OopS22Mvc76266.Web.Controllers.FollowUpsController.Index (oop-s2-2-mvc-76266), returned result Microsoft.AspNetCore.Mvc.ViewResult in 38.8522ms.
+2026-03-30 19:04:26.483 +01:00 [INF] Executing ViewResult, running view Index.
+2026-03-30 19:04:26.498 +01:00 [INF] Executed ViewResult - view Index executed in 16.2318ms.
+2026-03-30 19:04:26.498 +01:00 [INF] Executed action OopS22Mvc76266.Web.Controllers.FollowUpsController.Index (oop-s2-2-mvc-76266) in 56.2087ms
+2026-03-30 19:04:26.498 +01:00 [INF] Executed endpoint 'OopS22Mvc76266.Web.Controllers.FollowUpsController.Index (oop-s2-2-mvc-76266)'
+2026-03-30 19:04:26.498 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5156/FollowUps - 200 null text/html; charset=utf-8 73.8177ms
