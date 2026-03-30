@@ -5,4 +5,7 @@ obj/
 *.user
 *.suo
 *.db
-*.log
+*.loglogs/
+*.db
+*.db-shm
+*.db-wal
